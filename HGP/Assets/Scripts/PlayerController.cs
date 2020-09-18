@@ -6,8 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
     public float verticalInput;
-    public float speed = 15;
+    private float speed = 15;
     private float xRange = 30;
+    private float yRange = 30;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,19 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        
+        if (transform.position.y < -yRange)
+            {
+                transform.position = new Vector3(transform.position.x,- yRange, transform.position.z);
+            }
+
+            if (transform.position.y > yRange)
+            {
+                transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
+            }
+        transform.Translate(Vector3.up * verticalInput * Time.deltaTime * speed);
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
