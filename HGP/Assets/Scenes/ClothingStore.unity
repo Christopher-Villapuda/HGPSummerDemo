@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 89268111}
   m_Layer: 0
   m_Name: LunchlineV2 (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -242,7 +242,7 @@ GameObject:
   - component: {fileID: 150086205}
   m_Layer: 0
   m_Name: Server (12)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ GameObject:
   - component: {fileID: 176271778}
   m_Layer: 0
   m_Name: Table (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,7 +458,7 @@ GameObject:
   - component: {fileID: 292364463}
   m_Layer: 0
   m_Name: Server (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -677,7 +677,7 @@ GameObject:
   - component: {fileID: 387015458}
   m_Layer: 0
   m_Name: Table
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 457563923}
   m_Layer: 0
   m_Name: Server (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1011,7 +1011,7 @@ GameObject:
   - component: {fileID: 569067931}
   m_Layer: 0
   m_Name: Table (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1200,7 +1200,7 @@ GameObject:
   - component: {fileID: 597878729}
   m_Layer: 0
   m_Name: Server (5)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 667620263}
   m_Layer: 0
   m_Name: Server (11)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 700622822}
   m_Layer: 0
   m_Name: Server (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1524,7 +1524,7 @@ GameObject:
   - component: {fileID: 711976301}
   m_Layer: 0
   m_Name: LunchlineV2 (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 730987754}
   m_Layer: 0
   m_Name: Server (6)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 875322605}
   m_Layer: 0
   m_Name: Server (7)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1849,6 +1849,7 @@ GameObject:
   - component: {fileID: 1006774275}
   - component: {fileID: 1006774276}
   - component: {fileID: 1006774277}
+  - component: {fileID: 1006774278}
   m_Layer: 0
   m_Name: Child
   m_TagString: Untagged
@@ -1957,7 +1958,7 @@ BoxCollider2D:
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_AutoTiling: 1
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
@@ -1994,6 +1995,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a0d535d7861594db24256e0e9cf41c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1006774278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006774271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9624662d54b8a6d41b40cb4c690fe880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1133099942
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,7 +2020,7 @@ GameObject:
   - component: {fileID: 1133099944}
   m_Layer: 0
   m_Name: Server (13)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2151,7 +2164,7 @@ GameObject:
   - component: {fileID: 1194161699}
   m_Layer: 0
   m_Name: Table (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2259,7 +2272,7 @@ GameObject:
   - component: {fileID: 1368592251}
   m_Layer: 0
   m_Name: Server (14)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2367,7 +2380,7 @@ GameObject:
   - component: {fileID: 1402397997}
   m_Layer: 0
   m_Name: LunchlineV2 (2)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2475,7 +2488,7 @@ GameObject:
   - component: {fileID: 1419673343}
   m_Layer: 0
   m_Name: Server
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2583,7 +2596,7 @@ GameObject:
   - component: {fileID: 1549310568}
   m_Layer: 0
   m_Name: LunchlineV2 (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2691,7 +2704,7 @@ GameObject:
   - component: {fileID: 1737921044}
   m_Layer: 0
   m_Name: Server (10)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2797,9 +2810,10 @@ GameObject:
   - component: {fileID: 1837440049}
   - component: {fileID: 1837440051}
   - component: {fileID: 1837440050}
+  - component: {fileID: 1837440052}
   m_Layer: 0
   m_Name: LunchlineV2
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2831,7 +2845,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.4}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2842,7 +2856,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.375, y: 1.5625}
+  m_Size: {x: 2.375, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &1837440051
 SpriteRenderer:
@@ -2894,6 +2908,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1837440052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837440048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a0d535d7861594db24256e0e9cf41c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1839109007
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,7 +2933,7 @@ GameObject:
   - component: {fileID: 1839109009}
   m_Layer: 0
   m_Name: Server (1)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3015,7 +3041,7 @@ GameObject:
   - component: {fileID: 1860614166}
   m_Layer: 0
   m_Name: Server (8)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3123,7 +3149,7 @@ GameObject:
   - component: {fileID: 1938895927}
   m_Layer: 0
   m_Name: LunchlineV2 (4)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3231,7 +3257,7 @@ GameObject:
   - component: {fileID: 1951017299}
   m_Layer: 0
   m_Name: Server (9)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3590,7 +3616,7 @@ GameObject:
   - component: {fileID: 2080172337}
   m_Layer: 0
   m_Name: Table (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -17,10 +17,11 @@ public class PlayerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {if (transform.position.x < -xRange)
+    {
+        if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-         }
+        }
 
         if (transform.position.x > xRange)
         {
@@ -34,7 +35,7 @@ public class PlayerController : MonoBehaviour
                 transform.position = new Vector3(transform.position.x,- yRange, transform.position.z);
             }
 
-            if (transform.position.y > yRange)
+        if (transform.position.y > yRange)
             {
                 transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
             }
