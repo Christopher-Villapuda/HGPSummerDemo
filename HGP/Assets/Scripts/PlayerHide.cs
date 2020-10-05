@@ -9,6 +9,7 @@ public class PlayerHide : MonoBehaviour
     private float originalYpos;
     private float newXpos;
     private float newYpos;
+    private bool hideAction = false;
 
     void FixedUpdate()
     {
@@ -18,23 +19,35 @@ public class PlayerHide : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            hideAction = true;
+        }
+    }
+
     void OnCollisionStay2D(Collision2D col)
     {
-        if (Input.GetKeyDown("space") && col.gameObject.tag == "Prop")
+        if (hideAction)
         {
-            if (!hiding)
+            if (col.gameObject.tag == "Prop")
             {
-                hiding = true;
-                newXpos = col.gameObject.transform.position.x;
-                newYpos = col.gameObject.transform.position.y;
-                originalXpos = transform.position.x;
-                originalYpos = transform.position.y;
+                if (hiding)
+                {
+                    hiding = false;
+                    transform.position = new Vector2(originalXpos, originalYpos);
+                }
+                else
+                {
+                    hiding = true;
+                    newXpos = col.gameObject.transform.position.x;
+                    newYpos = col.gameObject.transform.position.y;
+                    originalXpos = transform.position.x;
+                    originalYpos = transform.position.y;
+                }
             }
-            else
-            {
-                hiding = false;
-                transform.position = new Vector2(originalXpos, originalYpos);
-            }
+            hideAction = false;
         }
     }
 }
