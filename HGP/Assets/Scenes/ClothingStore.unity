@@ -2316,7 +2316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704812003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.244, y: -6.698, z: 41.85156}
+  m_LocalPosition: {x: -13.244, y: -6.698, z: 0}
   m_LocalScale: {x: 3.645864, y: 4.3377056, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2377,7 +2377,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -3313,6 +3313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Server
       objectReference: {fileID: 0}
+    - target: {fileID: 2998088460069336025, guid: b39ecf335f9195844a32b2d83b57ac4a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Prop
+      objectReference: {fileID: 0}
     - target: {fileID: 2998088460069336026, guid: b39ecf335f9195844a32b2d83b57ac4a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3510,6 +3515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Child
+      objectReference: {fileID: 0}
+    - target: {fileID: 2373813484207697184, guid: a141e25fe54b2c9488f016a850396da0,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a141e25fe54b2c9488f016a850396da0, type: 3}

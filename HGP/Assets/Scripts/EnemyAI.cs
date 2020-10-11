@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     //private Vector2 enemy;
     [SerializeField]
     private float speed = 10.0f;
+    private RaycastHit2D hit;
 
     void Start()
     {
@@ -24,6 +25,11 @@ public class EnemyAI : MonoBehaviour
         float step = speed * Time.deltaTime;
         targetVector = target.position;
 
-        rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, (targetVector - (Vector2)transform.position),300);
+        Debug.Log(hit.collider.gameObject.tag);
+        if (hit.collider.gameObject.tag == "Player")
+        {
+            rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
+        }
     }
 }
