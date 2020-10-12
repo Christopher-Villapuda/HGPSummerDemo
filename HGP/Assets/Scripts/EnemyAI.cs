@@ -19,17 +19,25 @@ public class EnemyAI : MonoBehaviour
         //targetVector = target.position;
         //enemy = transform.position;
         rBD2D = GetComponent<Rigidbody2D>();
+        targetVector = target.position;
     }
     void Update()
     {
+        //Sets up the distance moved this frame.
         float step = speed * Time.deltaTime;
-        targetVector = target.position;
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, (targetVector - (Vector2)transform.position),300);
+        //Casts a ray towards the player.
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, ((Vector2)target.position - (Vector2)transform.position),300);
+        //Draws a ray towards the position the enemy is moving towards
+        Debug.DrawRay(transform.position, (targetVector - (Vector2)transform.position), Color.red);
+        //Prints the name of the hit object.
         Debug.Log(hit.collider.gameObject.tag);
+        //If the cast ray hits the player, the position the enemy is moving towards updates.
         if (hit.collider.gameObject.tag == "Player")
         {
-            rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
+            targetVector = target.position;
         }
+        //Moves the enemy towards the targeted position.
+        rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
     }
 }
