@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private Transform target;
     private Vector2 targetVector;
+    private Vector2 targetVectoerStorage;
     private Rigidbody2D rBD2D;
     //private Vector2 enemy;
     [SerializeField]
@@ -37,6 +38,11 @@ public class EnemyAI : MonoBehaviour
         {
             targetVector = target.position;
         }
+        else if (hit.collider.gameObject.tag == "Prop")
+        {
+            //Here I will store the orignal vector and plot out the new vectors for getting around the prop.
+        }
+
         //Moves the enemy towards the targeted position.
         rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
     }
