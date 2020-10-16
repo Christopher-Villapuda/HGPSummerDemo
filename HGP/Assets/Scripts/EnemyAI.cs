@@ -33,16 +33,16 @@ public class EnemyAI : MonoBehaviour
         //Draws a ray towards the position the enemy is moving towards
         Debug.DrawRay(transform.position, (targetVector - (Vector2)transform.position), Color.red);
         //Prints the name of the hit object.
-        Debug.Log(hit.collider.gameObject.tag);
+        //Debug.Log(hit.collider.gameObject.tag);
         //If the cast ray hits the player, the position the enemy is moving towards updates.
         if (hit.collider.gameObject.tag == "Player")
         {
             targetVector = target.position;
         }
-        else if (hit.collider.gameObject.tag == "Prop")
-        {
-            additionalVelocity = transform.up * step;
-        }
+        //else if (hit.collider.gameObject.tag == "Prop")
+        //{
+        //    additionalVelocity = transform.up * step;
+        //}
 
         //if (Input.GetKey("space"))
         //{
@@ -54,5 +54,14 @@ public class EnemyAI : MonoBehaviour
         rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step) + additionalVelocity);
 
         additionalVelocity = new Vector2(0, 0);
+    }
+
+    void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Prop")
+        {
+            additionalVelocity = transform.up * speed * Time.deltaTime;
+            Debug.Log("Bump");
+        }
     }
 }
