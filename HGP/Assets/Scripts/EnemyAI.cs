@@ -64,22 +64,40 @@ public class EnemyAI : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D other)
     {
+        int layerMask = 1 << 8;
+        layerMask = ~layerMask;
         var bounds = GetComponent<BoxCollider2D>().bounds.extents;
         var xExtent = new Vector2(bounds.x, 0);
         var yExtent = new Vector2(0, bounds.y);
+        Vector2[] lineCastDimensions = new Vector2[8];
+        lineCastDimensions[0] = (Vector2)transform.position + yExtent + (Vector2)transform.right * directionRayDistance;
+        lineCastDimensions[1] = (Vector2)transform.position + yExtent - (Vector2)transform.right * directionRayDistance;
+        lineCastDimensions[2] = (Vector2)transform.position - yExtent + (Vector2)transform.right * directionRayDistance;
+        lineCastDimensions[3] = (Vector2)transform.position - yExtent - (Vector2)transform.right * directionRayDistance;
+        lineCastDimensions[4] = (Vector2)transform.position + xExtent + (Vector2)transform.up * directionRayDistance;
+        lineCastDimensions[5] = (Vector2)transform.position + xExtent - (Vector2)transform.up * directionRayDistance;
+        lineCastDimensions[6] = (Vector2)transform.position - xExtent + (Vector2)transform.up * directionRayDistance;
+        lineCastDimensions[7] = (Vector2)transform.position - xExtent - (Vector2)transform.up * directionRayDistance;
+
         //Get this shit cleaned up and put this shit in an if statement to make it usable.
-        Debug.DrawLine((Vector2)transform.position + yExtent + (Vector2)transform.right * directionRayDistance, (Vector2)transform.position + yExtent - (Vector2)transform.right * directionRayDistance);
-        Debug.DrawLine((Vector2)transform.position - yExtent + (Vector2)transform.right * directionRayDistance, (Vector2)transform.position - yExtent - (Vector2)transform.right * directionRayDistance);
-        Debug.DrawLine((Vector2)transform.position + xExtent + (Vector2)transform.up * directionRayDistance, (Vector2)transform.position + xExtent - (Vector2)transform.up * directionRayDistance);
-        Debug.DrawLine((Vector2)transform.position - xExtent + (Vector2)transform.up * directionRayDistance, (Vector2)transform.position - xExtent - (Vector2)transform.up * directionRayDistance);
-        if (Physics2D.Linecast(transform.position + transform.right * directionRayDistance,transform.position - transform.right * directionRayDistance))
+        Debug.DrawLine(lineCastDimensions[0], lineCastDimensions[1]);
+        Debug.DrawLine(lineCastDimensions[2], lineCastDimensions[3]);
+        Debug.DrawLine(lineCastDimensions[4], lineCastDimensions[5]);
+        Debug.DrawLine(lineCastDimensions[6], lineCastDimensions[7]);
+        if (Physics2D.Linecast(lineCastDimensions[0], lineCastDimensions[1], layerMask)
+            || Physics2D.Linecast(lineCastDimensions[2], lineCastDimensions[3], layerMask)
+            || Physics2D.Linecast(lineCastDimensions[1], lineCastDimensions[0], layerMask)
+            || Physics2D.Linecast(lineCastDimensions[3], lineCastDimensions[2], layerMask))
         {
-            
+            Debug.Log("Bumping horizontal lines");
 
         }
-        if (Physics2D.Linecast(transform.position + transform.up * directionRayDistance, transform.position - transform.up * directionRayDistance))
+        if (Physics2D.Linecast(lineCastDimensions[4], lineCastDimensions[5], layerMask) 
+            || Physics2D.Linecast(lineCastDimensions[6], lineCastDimensions[7], layerMask)
+            || Physics2D.Linecast(lineCastDimensions[5], lineCastDimensions[4], layerMask)
+            || Physics2D.Linecast(lineCastDimensions[7], lineCastDimensions[6], layerMask))
         {
-            
+            Debug.Log("Bumping vertical lines");
 
         }
         if (other.gameObject.tag == "Prop")
