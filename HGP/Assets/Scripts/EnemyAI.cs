@@ -15,6 +15,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float speed = 10.0f;
     private RaycastHit2D hit;
+    private float horizontalDirection;
+    private float verticalDirection;
+    private float directionRayDistance = 2;
 
     void Start()
     {
@@ -50,6 +53,9 @@ public class EnemyAI : MonoBehaviour
         //    Debug.Log("Trying to move right");
         //}
 
+        horizontalDirection = Mathf.Sign(transform.position.x - targetVector.x);
+        verticalDirection = Mathf.Sign(transform.position.y - targetVector.y);
+
         //Moves the enemy towards the targeted position.
         rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step) + additionalVelocity);
 
@@ -58,10 +64,27 @@ public class EnemyAI : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D other)
     {
+        var bounds = GetComponent<BoxCollider2D>().bounds.extents;
+        var xExtent = new Vector2(bounds.x, 0);
+        var yExtent = new Vector2(0, bounds.y);
+        //Get this shit cleaned up and put this shit in an if statement to make it usable.
+        Debug.DrawLine((Vector2)transform.position + yExtent + (Vector2)transform.right * directionRayDistance, (Vector2)transform.position + yExtent - (Vector2)transform.right * directionRayDistance);
+        Debug.DrawLine((Vector2)transform.position - yExtent + (Vector2)transform.right * directionRayDistance, (Vector2)transform.position - yExtent - (Vector2)transform.right * directionRayDistance);
+        Debug.DrawLine((Vector2)transform.position + xExtent + (Vector2)transform.up * directionRayDistance, (Vector2)transform.position + xExtent - (Vector2)transform.up * directionRayDistance);
+        Debug.DrawLine((Vector2)transform.position - xExtent + (Vector2)transform.up * directionRayDistance, (Vector2)transform.position - xExtent - (Vector2)transform.up * directionRayDistance);
+        if (Physics2D.Linecast(transform.position + transform.right * directionRayDistance,transform.position - transform.right * directionRayDistance))
+        {
+            
+
+        }
+        if (Physics2D.Linecast(transform.position + transform.up * directionRayDistance, transform.position - transform.up * directionRayDistance))
+        {
+            
+
+        }
         if (other.gameObject.tag == "Prop")
         {
             additionalVelocity = transform.up * speed * Time.deltaTime;
-            Debug.Log("Bump");
         }
     }
 }
