@@ -53,8 +53,8 @@ public class EnemyAI : MonoBehaviour
         //    Debug.Log("Trying to move right");
         //}
 
-        horizontalDirection = Mathf.Sign(transform.position.x - targetVector.x);
-        verticalDirection = Mathf.Sign(transform.position.y - targetVector.y);
+        horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);
+        verticalDirection = Mathf.Sign(targetVector.y - transform.position.y);
 
         //Moves the enemy towards the targeted position.
         rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step) + additionalVelocity);
@@ -63,6 +63,11 @@ public class EnemyAI : MonoBehaviour
     }
 
     void OnCollisionStay2D(Collision2D other)
+    {
+        AvoidObstacles();
+    }
+
+    private void AvoidObstacles()
     {
         int layerMask = 1 << 8;
         layerMask = ~layerMask;
@@ -79,30 +84,30 @@ public class EnemyAI : MonoBehaviour
         lineCastDimensions[6] = (Vector2)transform.position - xExtent + (Vector2)transform.up * directionRayDistance;
         lineCastDimensions[7] = (Vector2)transform.position - xExtent - (Vector2)transform.up * directionRayDistance;
 
-        //Get this shit cleaned up and put this shit in an if statement to make it usable.
         Debug.DrawLine(lineCastDimensions[0], lineCastDimensions[1]);
         Debug.DrawLine(lineCastDimensions[2], lineCastDimensions[3]);
         Debug.DrawLine(lineCastDimensions[4], lineCastDimensions[5]);
         Debug.DrawLine(lineCastDimensions[6], lineCastDimensions[7]);
+
         if (Physics2D.Linecast(lineCastDimensions[0], lineCastDimensions[1], layerMask)
             || Physics2D.Linecast(lineCastDimensions[2], lineCastDimensions[3], layerMask)
             || Physics2D.Linecast(lineCastDimensions[1], lineCastDimensions[0], layerMask)
             || Physics2D.Linecast(lineCastDimensions[3], lineCastDimensions[2], layerMask))
         {
-            Debug.Log("Bumping horizontal lines");
-
+            //Debug.Log("Bumping horizontal lines");
+            additionalVelocity = transform.up * speed * Time.deltaTime * verticalDirection;
         }
-        if (Physics2D.Linecast(lineCastDimensions[4], lineCastDimensions[5], layerMask) 
+        if (Physics2D.Linecast(lineCastDimensions[4], lineCastDimensions[5], layerMask)
             || Physics2D.Linecast(lineCastDimensions[6], lineCastDimensions[7], layerMask)
             || Physics2D.Linecast(lineCastDimensions[5], lineCastDimensions[4], layerMask)
             || Physics2D.Linecast(lineCastDimensions[7], lineCastDimensions[6], layerMask))
         {
-            Debug.Log("Bumping vertical lines");
-
+            //Debug.Log("Bumping vertical lines");
+            additionalVelocity = transform.right * speed * Time.deltaTime * horizontalDirection;
         }
-        if (other.gameObject.tag == "Prop")
-        {
-            additionalVelocity = transform.up * speed * Time.deltaTime;
-        }
+        //if (other.gameObject.tag == "Prop")
+        //{
+        //    additionalVelocity = transform.up * speed * Time.deltaTime;
+        //}
     }
 }
