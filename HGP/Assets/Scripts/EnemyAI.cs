@@ -15,7 +15,9 @@ public class EnemyAI : MonoBehaviour
     private Vector2 additionalVelocity;
     //private Vector2 enemy;
     [SerializeField]
-    private float speed = 10.0f;
+    private float walkSpeed = 10.0f;
+    [SerializeField]
+    private float runSpeed = 15.0f;
     private RaycastHit2D hit;
     private float horizontalDirection;
     private float verticalDirection;
@@ -29,42 +31,33 @@ public class EnemyAI : MonoBehaviour
         //targetVector = target.position;
         //enemy = transform.position;
         rBD2D = GetComponent<Rigidbody2D>();
-        targetVector = target.position;
+        //targetVector = target.position;
         avoiding = false;
     }
     void Update()
     {
         //Sets up the distance moved this frame.
-        float step = speed * Time.deltaTime;
+        float step = walkSpeed * Time.deltaTime;
 
         //Casts a ray towards the player.
         RaycastHit2D hit = Physics2D.Raycast(transform.position, ((Vector2)target.position - (Vector2)transform.position),sightRadius);
         //Draws a ray towards the position the enemy is moving towards
         Debug.DrawRay(transform.position, (targetVector - (Vector2)transform.position), Color.red);
-        //Prints the name of the hit object.
-        //Debug.Log(hit.collider.gameObject.name);
         //If the cast ray hits the player, the position the enemy is moving towards updates.
-        if (hit)
+        if (hit && hit.collider.gameObject.tag == "Player")
         {
-            if (hit.collider.gameObject.tag == "Player")
-            {
                 PlayerHide playerHide = hit.collider.gameObject.GetComponent<PlayerHide>();
                 if (!playerHide.Hiding)
                 {
+                    step = runSpeed * Time.deltaTime;
                     targetVector = target.position;
                 }
-            }
         }
-        //else if (hit.collider.gameObject.tag == "Prop")
-        //{
-        //    additionalVelocity = transform.up * step;
-        //}
-
-        //if (Input.GetKey("space"))
-        //{
-        //    additionalVelocity = transform.right * step;
-        //    Debug.Log("Trying to move right");
-        //}
+        else
+        {
+            step = walkSpeed * Time.deltaTime;
+            targetVector = transform.up + transform.position;
+        }
 
         horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);
         verticalDirection = Mathf.Sign(targetVector.y - transform.position.y);
@@ -72,14 +65,14 @@ public class EnemyAI : MonoBehaviour
         //Moves the enemy towards the targeted position.
         if (!avoiding)
         {
-            rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step) + additionalVelocity);
+            rBD2D.MovePosition(Vector2.MoveTowards(transform.position, targetVector, step));
         }
         else
         {
             rBD2D.MovePosition((Vector2)transform.position + additionalVelocity);
         }
 
-        additionalVelocity = new Vector2(0, 0);
+        additionalVelocity = new Vector2(0,0);
     }
 
     void OnCollisionStay2D(Collision2D other)
@@ -116,7 +109,7 @@ public class EnemyAI : MonoBehaviour
             || Physics2D.Linecast(lineCastDimensions[3], lineCastDimensions[2], layerMask))
         {
             //Debug.Log("Bumping horizontal lines");
-            additionalVelocity = transform.up * speed * Time.deltaTime * verticalDirection;
+            additionalVelocity = transform.up * runSpeed * Time.deltaTime * verticalDirection;
         }
         if (Physics2D.Linecast(lineCastDimensions[4], lineCastDimensions[5], layerMask)
             || Physics2D.Linecast(lineCastDimensions[6], lineCastDimensions[7], layerMask)
@@ -124,11 +117,7 @@ public class EnemyAI : MonoBehaviour
             || Physics2D.Linecast(lineCastDimensions[7], lineCastDimensions[6], layerMask))
         {
             //Debug.Log("Bumping vertical lines");
-            additionalVelocity = transform.right * speed * Time.deltaTime * horizontalDirection;
+            additionalVelocity = transform.right * runSpeed * Time.deltaTime * horizontalDirection;
         }
-        //if (other.gameObject.tag == "Prop")
-        //{
-        //    additionalVelocity = transform.up * speed * Time.deltaTime;
-        //}
     }
 }

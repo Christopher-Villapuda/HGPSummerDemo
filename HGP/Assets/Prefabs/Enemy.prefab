@@ -145,8 +145,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 10
-  sightRadius: 10
+  walkSpeed: 5
+  runSpeed: 15
+  sightRadius: 5
 --- !u!114 &553926827906009287
 MonoBehaviour:
   m_ObjectHideFlags: 0
