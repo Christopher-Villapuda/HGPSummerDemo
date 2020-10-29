@@ -99,6 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ebfa451c1c9f55488c2850f84ad752a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprint: 2
+  maxStamina: 20
+  staminaDrain: 0.1
+  staminaGain: 0.2
 --- !u!61 &2373813484207694556
 BoxCollider2D:
   m_ObjectHideFlags: 0

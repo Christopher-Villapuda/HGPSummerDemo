@@ -11,42 +11,60 @@ public class PlayerController : MonoBehaviour
     //private float yRange = 30;
     private float xSpeed;
     private float ySpeed;
+    [SerializeField]
+    private float sprint = 5;
+    private float sprintSpeed;
+    [SerializeField]
+    private float maxStamina = 5;
+    [SerializeField]
+    private float staminaDrain = 0.1f;
+    [SerializeField]
+    private float staminaGain = 0.2f;
+    private float stamina;
+    private bool exhausted = false;
     private Vector2 velocity;
     private Rigidbody2D rBD2D;
     // Start is called before the first frame update
     void Start()
     {
         rBD2D = GetComponent<Rigidbody2D>();
+        stamina = maxStamina;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (transform.position.x < -xRange)
-        //{
-        //    transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        //}
-
-        //if (transform.position.x > xRange)
-        //{
-        //    transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        //}
-
-        //rBD2D.MovePosition(Vector3.right * horizontalInput * Time.deltaTime * speed);
-
-        //if (transform.position.y < -yRange)
-        //    {
-        //        transform.position = new Vector3(transform.position.x,- yRange, transform.position.z);
-        //    }
-
-        //if (transform.position.y > yRange)
-        //    {
-        //        transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
-        //    }
-        //rBD2D.MovePosition(Vector3.up * verticalInput * Time.deltaTime * speed);
-
-        //horizontalInput = Input.GetAxis("Horizontal");
-        //verticalInput = Input.GetAxis("Vertical");
+        if (!exhausted)
+        {
+            if (Input.GetKey("left shift"))
+            {
+                sprintSpeed = sprint;
+                stamina -= staminaDrain;
+                if (stamina < 0)
+                {
+                    exhausted = true;
+                }
+            }
+            else
+            {
+                sprintSpeed = 1;
+                if (stamina < maxStamina)
+                {
+                    stamina += staminaGain;
+                }
+            }
+        }
+        else
+        {
+            sprintSpeed = 0.5f;
+            stamina += staminaGain;
+            if (stamina >= maxStamina)
+            {
+                stamina = maxStamina;
+                exhausted = false;
+            }
+        }
+        Debug.Log("Stamina: " + stamina + " Exhausted: " + exhausted);
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
@@ -55,6 +73,6 @@ public class PlayerController : MonoBehaviour
 
         velocity = new Vector2(xSpeed, ySpeed);
 
-        rBD2D.MovePosition(rBD2D.position + velocity);
+        rBD2D.MovePosition(rBD2D.position + velocity * sprintSpeed);
     }
 }
