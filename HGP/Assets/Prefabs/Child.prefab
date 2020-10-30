@@ -10,11 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2373813484207694558}
   - component: {fileID: 2373813484207694559}
-  - component: {fileID: 2373813484207694557}
   - component: {fileID: 2373813484207694556}
   - component: {fileID: 2373813484207694555}
   - component: {fileID: 2960070544492506790}
   - component: {fileID: 6645796050990861998}
+  - component: {fileID: 2514529395009615438}
+  - component: {fileID: 2046571808835839412}
   m_Layer: 0
   m_Name: Child
   m_TagString: Player
@@ -87,22 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2373813484207694557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2373813484207697184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ebfa451c1c9f55488c2850f84ad752a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprint: 2
-  maxStamina: 20
-  staminaDrain: 0.1
-  staminaGain: 0.2
 --- !u!61 &2373813484207694556
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -174,6 +159,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8a0d535d7861594db24256e0e9cf41c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &2514529395009615438
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373813484207697184}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2046571808835839412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2373813484207697184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e282e11779f402468aae4e30be0f7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovingLeft: {fileID: 0}
+  playerMovingRight: {fileID: 0}
+  playerLeftIdle: {fileID: 0}
+  playerRightIdle: {fileID: 0}
+  sprint: 2
+  maxStamina: 20
+  staminaDrain: 0.1
+  staminaGain: 0.2
 --- !u!1 &5744117126742467120
 GameObject:
   m_ObjectHideFlags: 0
