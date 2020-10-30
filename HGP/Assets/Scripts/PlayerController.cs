@@ -1,60 +1,138 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    private AnimatorController playerMovingLeft;
+    [SerializeField]
+    private AnimatorController playerMovingRight;
+    [SerializeField]
+    private AnimatorController playerLeftIdle; // Plug in idle animation if you want!
+    [SerializeField]
+    private AnimatorController playerRightIdle;
+
     private float horizontalInput;
     private float verticalInput;
     private float speed = 25;
     //private float xRange = 30;
     //private float yRange = 30;
-    private float xSpeed;
-    private float ySpeed;
+    private float xSpeed = 0f;
+    private float ySpeed = 0f;
     private Vector2 velocity;
     private Rigidbody2D rBD2D;
+
+    private Animator playerAnimator;
+
     // Start is called before the first frame update
+
+    void Awake()
+    {
+        playerAnimator = GetComponent<Animator>();
+        //SetNoMovingAnimBool();
+    }
+
     void Start()
     {
         rBD2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    void FixedUpdate()
     {
-        //if (transform.position.x < -xRange)
-        //{
-        //    transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
-        //}
-
-        //if (transform.position.x > xRange)
-        //{
-        //    transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
-        //}
-
-        //rBD2D.MovePosition(Vector3.right * horizontalInput * Time.deltaTime * speed);
-
-        //if (transform.position.y < -yRange)
-        //    {
-        //        transform.position = new Vector3(transform.position.x,- yRange, transform.position.z);
-        //    }
-
-        //if (transform.position.y > yRange)
-        //    {
-        //        transform.position = new Vector3(transform.position.x, yRange, transform.position.z);
-        //    }
-        //rBD2D.MovePosition(Vector3.up * verticalInput * Time.deltaTime * speed);
-
-        //horizontalInput = Input.GetAxis("Horizontal");
-        //verticalInput = Input.GetAxis("Vertical");
+        Vector2 position = transform.position;
 
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        xSpeed = speed * horizontalInput * Time.deltaTime;
-        ySpeed = speed * verticalInput * Time.deltaTime;
 
-        velocity = new Vector2(xSpeed, ySpeed);
+        position.x = position.x + speed * horizontalInput * Time.deltaTime;
+        position.y = position.y + speed * verticalInput * Time.deltaTime;
 
-        rBD2D.MovePosition(rBD2D.position + velocity);
+        //xSpeed = speed * horizontalInput * Time.deltaTime;
+        //ySpeed = speed * verticalInput * Time.deltaTime;
+
+        //velocity = new Vector2(xSpeed, ySpeed);
+
+        if (horizontalInput != 0)
+        {
+            if (horizontalInput > 0) // towards 1 = right
+            {
+                Debug.Log("The player is moving right.");
+                playerAnimator.runtimeAnimatorController = playerMovingRight;
+                //SetMovingRightAnimBool();
+            }
+            else if (horizontalInput < 0)  // towards -1 = left
+            {
+                Debug.Log("The player is moving left.");
+                playerAnimator.runtimeAnimatorController = playerMovingLeft;
+                //SetMovingLeftAnimBool();
+            }
+        }
+        else if (horizontalInput == 0)
+        {
+            if (playerAnimator.runtimeAnimatorController == playerMovingRight)
+            {
+                playerAnimator.runtimeAnimatorController = playerRightIdle;
+            }
+            else if (playerAnimator.runtimeAnimatorController == playerMovingLeft)
+            {
+                playerAnimator.runtimeAnimatorController = playerLeftIdle;
+            }
+        }
+        if (verticalInput != 0)
+        {
+            //if (horizontalInput > 0) // towards 1 = right
+            //{
+            //    Debug.Log("The player is moving right.");
+            //    playerAnimator.runtimeAnimatorController = playerMovingRight;
+            //    //SetMovingRightAnimBool();
+            //}
+            //else if (horizontalInput < 0)  // towards -1 = left
+            //{
+            //    Debug.Log("The player is moving left.");
+            //    playerAnimator.runtimeAnimatorController = playerMovingLeft;
+            //    //SetMovingLeftAnimBool();
+            //}
+        }
+        else if (verticalInput == 0)
+        {
+            //if (playerAnimator.runtimeAnimatorController == playerMovingRight)
+            //{
+            //    playerAnimator.runtimeAnimatorController = playerRightIdle;
+            //}
+            //else if (playerAnimator.runtimeAnimatorController == playerMovingLeft)
+            //{
+            //    playerAnimator.runtimeAnimatorController = playerLeftIdle;
+            //}
+        }
+
+
+
+        //rBD2D.MovePosition(rBD2D.position + velocity);
+        rBD2D.MovePosition(position);
+    }
+
+    private void SetNoMovingAnimBool()
+    {
+        playerAnimator.SetBool("MovingLeft", false);
+        playerAnimator.SetBool("MovingRight", false);
+        playerAnimator.SetBool("MovingUp", false);
+        playerAnimator.SetBool("MovingDown", false);
+    }
+    private void SetMovingLeftAnimBool()
+    {
+        playerAnimator.SetBool("MovingLeft", true);
+        playerAnimator.SetBool("MovingRight", false);
+        playerAnimator.SetBool("MovingUp", false);
+        playerAnimator.SetBool("MovingDown", false);
+    }
+    private void SetMovingRightAnimBool()
+    {
+        playerAnimator.SetBool("MovingRight", true);
+        playerAnimator.SetBool("MovingLeft", false);
+        playerAnimator.SetBool("MovingUp", false);
+        playerAnimator.SetBool("MovingDown", false);
     }
 }
