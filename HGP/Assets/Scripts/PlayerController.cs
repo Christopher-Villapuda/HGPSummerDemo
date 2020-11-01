@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
+    [SerializeField]
     private float speed = 15;
     //private float xRange = 30;
     //private float yRange = 30;
@@ -105,13 +106,13 @@ public class PlayerController : MonoBehaviour
         {
             if (horizontalInput > 0) // towards 1 = right
             {
-                Debug.Log("The player is moving right.");
+                //Debug.Log("The player is moving right.");
                 playerAnimator.runtimeAnimatorController = playerMovingRight;
                 //SetMovingRightAnimBool();
             }
             else if (horizontalInput < 0)  // towards -1 = left
             {
-                Debug.Log("The player is moving left.");
+                //Debug.Log("The player is moving left.");
                 playerAnimator.runtimeAnimatorController = playerMovingLeft;
                 //SetMovingLeftAnimBool();
             }
