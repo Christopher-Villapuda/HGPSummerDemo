@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: FloorTopLeftNoGap
+  m_Name: Newest_walls_outside_diagonal_282
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -5641023767062035668, guid: db37e286bc95815458ff1b0797275368,
+  m_Sprite: {fileID: -3312512161066226362, guid: c88e6ccce6e6d714c92e089acfa28aab,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
