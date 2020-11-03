@@ -1,5 +1,4 @@
 fileFormatVersion: 2
-
 guid: c88e6ccce6e6d714c92e089acfa28aab
 TextureImporter:
   internalIDToNameTable:
@@ -1113,8 +1112,36 @@ TextureImporter:
   - first:
       213: -1443132194512374414
     second: Newest_walls_outside_diagonal_272
-
-
+  - first:
+      213: -3979307476658554785
+    second: Newest_walls_outside_diagonal_273
+  - first:
+      213: 6014463904927777140
+    second: Newest_walls_outside_diagonal_274
+  - first:
+      213: -2897567280009919045
+    second: Newest_walls_outside_diagonal_275
+  - first:
+      213: -7187387928911672281
+    second: Newest_walls_outside_diagonal_276
+  - first:
+      213: -975243107330852990
+    second: Newest_walls_outside_diagonal_277
+  - first:
+      213: -3805562493324319569
+    second: Newest_walls_outside_diagonal_278
+  - first:
+      213: 7878691665729680052
+    second: Newest_walls_outside_diagonal_279
+  - first:
+      213: 9098826654084419064
+    second: Newest_walls_outside_diagonal_280
+  - first:
+      213: -442916889179547831
+    second: Newest_walls_outside_diagonal_281
+  - first:
+      213: -3312512161066226362
+    second: Newest_walls_outside_diagonal_282
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1144,27 +1171,21 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-
     filterMode: 0
-
     aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: -1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-
   spriteMode: 2
-
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-
   spritePixelsToUnits: 108
-
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -1176,14 +1197,13 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -1197,7 +1217,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -1206,7 +1225,6 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-
     sprites:
     - serializedVersion: 2
       name: Newest_walls_outside_diagonal_0
@@ -1223,8 +1241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 979346928a31234f0800000000000000
-      internalID: -850595766649734791
+      spriteID: 9d81268da996b3c40800000000000000
+      internalID: 5493100284284639449
       vertices: []
       indices: 
       edges: []
@@ -1244,8 +1262,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cd7548d2c1d00710800000000000000
-      internalID: 1657555297654635970
+      spriteID: 4cb652e9bf648cf60800000000000000
+      internalID: 8054765980056120260
       vertices: []
       indices: 
       edges: []
@@ -1265,8 +1283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e239b2d1e52b150800000000000000
-      internalID: 5886871142304787970
+      spriteID: d8f2db17a2bcd3be0800000000000000
+      internalID: -1495816118059847795
       vertices: []
       indices: 
       edges: []
@@ -1286,8 +1304,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79cad123440bdc0e0800000000000000
-      internalID: -2247946832042939241
+      spriteID: ef21b44c777a8da10800000000000000
+      internalID: 1934480172791829246
       vertices: []
       indices: 
       edges: []
@@ -1307,8 +1325,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e276c1a47de03480800000000000000
-      internalID: -8921369776634826016
+      spriteID: fa635d03785693c90800000000000000
+      internalID: -7189603698806016337
       vertices: []
       indices: 
       edges: []
@@ -1328,8 +1346,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74900dba754b62450800000000000000
-      internalID: 6063732236938643783
+      spriteID: f588546b01f580e70800000000000000
+      internalID: 9081613173974730847
       vertices: []
       indices: 
       edges: []
@@ -1349,8 +1367,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cdad9dbcd5919bc0800000000000000
-      internalID: -3778073837080564286
+      spriteID: 035872a4b7ea2f290800000000000000
+      internalID: -7858026555259779792
       vertices: []
       indices: 
       edges: []
@@ -1370,8 +1388,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f3147ba58dec3a40800000000000000
-      internalID: 5349411615772251126
+      spriteID: d338a1ba5bb2e61a0800000000000000
+      internalID: -6814461126905265347
       vertices: []
       indices: 
       edges: []
@@ -1391,8 +1409,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a426ab6714606700800000000000000
-      internalID: 531534807782794406
+      spriteID: 7f2a35b4349652a30800000000000000
+      internalID: 4189870766085612279
       vertices: []
       indices: 
       edges: []
@@ -1412,8 +1430,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb5936870cac5c9f0800000000000000
-      internalID: -448729659851172420
+      spriteID: 6c097833fd34b3a80800000000000000
+      internalID: -8486114446928277306
       vertices: []
       indices: 
       edges: []
@@ -1433,8 +1451,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b040149fbee9bb6c0800000000000000
-      internalID: -4126529897218636789
+      spriteID: 7e19172f7e73182c0800000000000000
+      internalID: -4431199089011355161
       vertices: []
       indices: 
       edges: []
@@ -1454,8 +1472,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2adf61b9d7103c410800000000000000
-      internalID: 1496041140201651618
+      spriteID: 20efeef02d4f57e10800000000000000
+      internalID: 2194929576460615170
       vertices: []
       indices: 
       edges: []
@@ -1475,8 +1493,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e02e176601474f70800000000000000
-      internalID: 9171370661918941414
+      spriteID: 0cbdccf23aa0817c0800000000000000
+      internalID: -4100515764722934848
       vertices: []
       indices: 
       edges: []
@@ -1496,8 +1514,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6a134b1f3c351ba0800000000000000
-      internalID: -6118918276974962065
+      spriteID: bcd9268babb9d6230800000000000000
+      internalID: 3633731700617551307
       vertices: []
       indices: 
       edges: []
@@ -1517,8 +1535,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3656f33b401b157a0800000000000000
-      internalID: -6390131762516761245
+      spriteID: e4630db35f13c4c90800000000000000
+      internalID: -7184312376222534066
       vertices: []
       indices: 
       edges: []
@@ -1538,8 +1556,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa7b22a1b543988b0800000000000000
-      internalID: -5149527133036300374
+      spriteID: b94928a5ef22228a0800000000000000
+      internalID: -6331459650293951333
       vertices: []
       indices: 
       edges: []
@@ -1559,8 +1577,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda142f86adf14ac0800000000000000
-      internalID: -3872535312754009377
+      spriteID: 679d4859d57171380800000000000000
+      internalID: -9000699639568737930
       vertices: []
       indices: 
       edges: []
@@ -1580,8 +1598,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ca90083792172f30800000000000000
-      internalID: 4550626389170100934
+      spriteID: 75b49b9399ab033f0800000000000000
+      internalID: -923032756349744297
       vertices: []
       indices: 
       edges: []
@@ -1601,8 +1619,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc626338b58b24e0800000000000000
-      internalID: -2005362182880858881
+      spriteID: 96a6dec9c0bcb1a50800000000000000
+      internalID: 6493006542817553001
       vertices: []
       indices: 
       edges: []
@@ -1622,8 +1640,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 949e86a84d0ee8da0800000000000000
-      internalID: -5940563654995285687
+      spriteID: c601bc4c6c03471c0800000000000000
+      internalID: -4506923696827723668
       vertices: []
       indices: 
       edges: []
@@ -1643,8 +1661,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca4bc39b07026f90800000000000000
-      internalID: -6961994327655757118
+      spriteID: d1358d64816ddead0800000000000000
+      internalID: -2671243604204694755
       vertices: []
       indices: 
       edges: []
@@ -1664,8 +1682,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d615e24bb74189aa0800000000000000
-      internalID: -6154146369265315475
+      spriteID: b688ccbf4e35a4f10800000000000000
+      internalID: 2254706806394488939
       vertices: []
       indices: 
       edges: []
@@ -1685,8 +1703,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70f40688df40005c0800000000000000
-      internalID: -4251392561276498169
+      spriteID: d4a405a7bafbdcfd0800000000000000
+      internalID: -2319987489813542323
       vertices: []
       indices: 
       edges: []
@@ -1706,8 +1724,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bc6c2c7a81658150800000000000000
-      internalID: 5874208536391347382
+      spriteID: c9fb35499e648e890800000000000000
+      internalID: -7428609616317792356
       vertices: []
       indices: 
       edges: []
@@ -1727,8 +1745,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c3c45404beb42150800000000000000
-      internalID: 5847007896609801153
+      spriteID: 34805115e21e5eda0800000000000000
+      internalID: -5916074946436200381
       vertices: []
       indices: 
       edges: []
@@ -1748,8 +1766,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d02f84a22f62e220800000000000000
-      internalID: 2513693736606572752
+      spriteID: 580048d8526b457b0800000000000000
+      internalID: -5236360194320760699
       vertices: []
       indices: 
       edges: []
@@ -1769,8 +1787,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e082a6dceb28e230800000000000000
-      internalID: 3668230192706519266
+      spriteID: 66e3c91890ec3e4e0800000000000000
+      internalID: -1953491273124135322
       vertices: []
       indices: 
       edges: []
@@ -1790,8 +1808,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25e1f55ad59505f20800000000000000
-      internalID: 3409323176660770386
+      spriteID: da9ed2cb1c1522f50800000000000000
+      internalID: 6855131475338979757
       vertices: []
       indices: 
       edges: []
@@ -1811,8 +1829,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d3a4dde48f36e630800000000000000
-      internalID: 3955919162849928149
+      spriteID: 2cd269c569769cc50800000000000000
+      internalID: 6685989017304313282
       vertices: []
       indices: 
       edges: []
@@ -1832,8 +1850,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 507a1f4b92331b0f0800000000000000
-      internalID: -1103044179506649339
+      spriteID: d6117f4864c6c4280800000000000000
+      internalID: -9057745700414615187
       vertices: []
       indices: 
       edges: []
@@ -1853,8 +1871,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 462a6ab351e8d0610800000000000000
-      internalID: 1589082465377886820
+      spriteID: f249509c0e3b09e50800000000000000
+      internalID: 6814144014238192687
       vertices: []
       indices: 
       edges: []
@@ -1874,8 +1892,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0661b43fac0f8b4e0800000000000000
-      internalID: -1965556482891377056
+      spriteID: 77538de36e468ed90800000000000000
+      internalID: -7068288675098380937
       vertices: []
       indices: 
       edges: []
@@ -1895,8 +1913,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ef9c703532e410d0800000000000000
-      internalID: -3452886296211709983
+      spriteID: 4fae1a98f8fb32270800000000000000
+      internalID: 8224627967718976244
       vertices: []
       indices: 
       edges: []
@@ -1916,8 +1934,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16240f12160c6af00800000000000000
-      internalID: 1127800280116642401
+      spriteID: 920f2968a07eee890800000000000000
+      internalID: -7426744703093903319
       vertices: []
       indices: 
       edges: []
@@ -1937,8 +1955,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a5fac401cbfa55a0800000000000000
-      internalID: -6531631503119813213
+      spriteID: 391c9766b0b0b7600800000000000000
+      internalID: 466979129954779539
       vertices: []
       indices: 
       edges: []
@@ -1958,8 +1976,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a9fec6d56ee4bf20800000000000000
-      internalID: 3437634536753527207
+      spriteID: af33fe94fe2b92950800000000000000
+      internalID: 6424863084228064250
       vertices: []
       indices: 
       edges: []
@@ -1979,8 +1997,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c339fcb4a2d164df0800000000000000
-      internalID: -196437466246311108
+      spriteID: cd47a13fb1423f200800000000000000
+      internalID: 212553309877859548
       vertices: []
       indices: 
       edges: []
@@ -2000,8 +2018,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 658d9e4f9273b2c20800000000000000
-      internalID: 3182698215009540182
+      spriteID: 186e427c4a1b9e9f0800000000000000
+      internalID: -438624167418075519
       vertices: []
       indices: 
       edges: []
@@ -2021,8 +2039,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c3e268c4639a69010800000000000000
-      internalID: 1195328801790635580
+      spriteID: 1b5d2434a1c917de0800000000000000
+      internalID: -1337115977740790351
       vertices: []
       indices: 
       edges: []
@@ -2042,8 +2060,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d3ec661b0b178690800000000000000
-      internalID: -7600076111729597479
+      spriteID: 18338cf413623fc00800000000000000
+      internalID: 933131541029598081
       vertices: []
       indices: 
       edges: []
@@ -2063,8 +2081,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8ecf1213d3efe330800000000000000
-      internalID: 3742460311049850507
+      spriteID: 6180fee3055e1c540800000000000000
+      internalID: 5026550791938181142
       vertices: []
       indices: 
       edges: []
@@ -2084,8 +2102,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b391fc55dfbaf1c0800000000000000
-      internalID: -4469048757103520844
+      spriteID: b17bdb884c8271510800000000000000
+      internalID: 1519728223833667355
       vertices: []
       indices: 
       edges: []
@@ -2105,8 +2123,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b058ebf740f2a9ed0800000000000000
-      internalID: -2406559354506541813
+      spriteID: 0429239eb5d047480800000000000000
+      internalID: -8902475874999037376
       vertices: []
       indices: 
       edges: []
@@ -2126,8 +2144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8b4af239c6814910800000000000000
-      internalID: 1819883923136203663
+      spriteID: c8336daed56aaa7c0800000000000000
+      internalID: -4059249191819005044
       vertices: []
       indices: 
       edges: []
@@ -2147,8 +2165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fb07b097fce743c0800000000000000
-      internalID: -4375267964938155023
+      spriteID: bf0ff49f1c8f65dd0800000000000000
+      internalID: -2497535431335218949
       vertices: []
       indices: 
       edges: []
@@ -2168,8 +2186,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39b493e4765f83ee0800000000000000
-      internalID: -1281004269944091757
+      spriteID: 867be01a163442f40800000000000000
+      internalID: 5702757114750875496
       vertices: []
       indices: 
       edges: []
@@ -2189,8 +2207,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e93715637299bb9d0800000000000000
-      internalID: -2757441953140214882
+      spriteID: 69c1bd7b6f36b0990800000000000000
+      internalID: -7418726049865065322
       vertices: []
       indices: 
       edges: []
@@ -2210,8 +2228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0de9b3f6c617f380800000000000000
-      internalID: -8937649891745075954
+      spriteID: d021a4e79bc603090800000000000000
+      internalID: -8056820189422284275
       vertices: []
       indices: 
       edges: []
@@ -2231,8 +2249,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea2c1b3193a0855f0800000000000000
-      internalID: -767852496206839122
+      spriteID: 4d4df2281ea400830800000000000000
+      internalID: 4035307598536234196
       vertices: []
       indices: 
       edges: []
@@ -2252,8 +2270,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d71ac292952fe9ef0800000000000000
-      internalID: -99375676998770307
+      spriteID: 7213f475df04e7ca0800000000000000
+      internalID: -6017300595284692697
       vertices: []
       indices: 
       edges: []
@@ -2273,8 +2291,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a6f6126d415ebc50800000000000000
-      internalID: 6682868289864398501
+      spriteID: 521c0e5156df641d0800000000000000
+      internalID: -3366725060812291803
       vertices: []
       indices: 
       edges: []
@@ -2294,8 +2312,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf6f26f471fd7380800000000000000
-      internalID: -8971749398003355710
+      spriteID: e230718a8b194b530800000000000000
+      internalID: 3869878202098189102
       vertices: []
       indices: 
       edges: []
@@ -2315,8 +2333,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7646210b53fba410800000000000000
-      internalID: 1489551673962940028
+      spriteID: 95faef981eb0a13d0800000000000000
+      internalID: -3235260319001563303
       vertices: []
       indices: 
       edges: []
@@ -2336,8 +2354,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c17ff7275b340ee0800000000000000
-      internalID: -1295845547256614464
+      spriteID: f9b798fd063774690800000000000000
+      internalID: -7617993384769520737
       vertices: []
       indices: 
       edges: []
@@ -2357,8 +2375,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a463b571f3268070800000000000000
-      internalID: 8108207699095938208
+      spriteID: faf89e3749c8603a0800000000000000
+      internalID: -6699512826439299153
       vertices: []
       indices: 
       edges: []
@@ -2378,8 +2396,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f8a8c3f985907eb0800000000000000
-      internalID: -4724111589378578186
+      spriteID: 726b6cf66ecb8d590800000000000000
+      internalID: -7649156269184993753
       vertices: []
       indices: 
       edges: []
@@ -2399,8 +2417,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbb672ff98ef8fd80800000000000000
-      internalID: -8216537651492721733
+      spriteID: fa950991d1b6b9010800000000000000
+      internalID: 1196667898724112815
       vertices: []
       indices: 
       edges: []
@@ -2420,8 +2438,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f98b39c991cdfc700800000000000000
-      internalID: 562910481003821215
+      spriteID: 423b2c6af1fb00f40800000000000000
+      internalID: 5692760071658976036
       vertices: []
       indices: 
       edges: []
@@ -2441,8 +2459,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 939a164dd6b27bd20800000000000000
-      internalID: 3294149403159406905
+      spriteID: cb8e0352d0f725e10800000000000000
+      internalID: 2184948463663376572
       vertices: []
       indices: 
       edges: []
@@ -2462,8 +2480,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a20fb8985843237b0800000000000000
-      internalID: -5246072867790262230
+      spriteID: 6226769c4319ac070800000000000000
+      internalID: 8127468133446804006
       vertices: []
       indices: 
       edges: []
@@ -2483,8 +2501,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 687ccf72f385f2e20800000000000000
-      internalID: 3327975677927147398
+      spriteID: e8b95610300395d70800000000000000
+      internalID: 9032303317134711694
       vertices: []
       indices: 
       edges: []
@@ -2504,8 +2522,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 312c34742ff24c650800000000000000
-      internalID: 6252174900321305107
+      spriteID: 30f19082e008af140800000000000000
+      internalID: 4754253154932563715
       vertices: []
       indices: 
       edges: []
@@ -2525,8 +2543,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8649db717dd39e2b0800000000000000
-      internalID: -5554840671359232920
+      spriteID: ad0c1620eae550360800000000000000
+      internalID: 7135213286095700186
       vertices: []
       indices: 
       edges: []
@@ -2546,8 +2564,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ef7f303201e0e5c0800000000000000
-      internalID: -4188100253938909208
+      spriteID: 2cec189cf107f29c0800000000000000
+      internalID: -3949815066353611070
       vertices: []
       indices: 
       edges: []
@@ -2567,8 +2585,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1293aa860dee0eca0800000000000000
-      internalID: -5989524925526165215
+      spriteID: d84ec6bcd795f9270800000000000000
+      internalID: 8259418638439474317
       vertices: []
       indices: 
       edges: []
@@ -2588,8 +2606,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 837828b801c0b7370800000000000000
-      internalID: 8321258001696720696
+      spriteID: 069360dc4c7f9dfd0800000000000000
+      internalID: -2316548108680021664
       vertices: []
       indices: 
       edges: []
@@ -2609,8 +2627,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeac52e66e433f3a0800000000000000
-      internalID: -6632899661891515670
+      spriteID: ff8f616626bee8550800000000000000
+      internalID: 6165123747768891647
       vertices: []
       indices: 
       edges: []
@@ -2630,8 +2648,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458729ef81faf1420800000000000000
-      internalID: 2602991631528523860
+      spriteID: 3cfe8be5f25ba5650800000000000000
+      internalID: 6222485050223030211
       vertices: []
       indices: 
       edges: []
@@ -2651,8 +2669,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0195b3a0f13f43660800000000000000
-      internalID: 7364778605298800912
+      spriteID: 57a906de05040c170800000000000000
+      internalID: 8196622038138395253
       vertices: []
       indices: 
       edges: []
@@ -2672,8 +2690,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 016219cf9450900c0800000000000000
-      internalID: -4609146928308869616
+      spriteID: f903cc75cd8bb3c20800000000000000
+      internalID: 3187344417800073375
       vertices: []
       indices: 
       edges: []
@@ -2693,8 +2711,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa7172b5643a24a30800000000000000
-      internalID: 4198097325235050410
+      spriteID: 4ae716a75f066e870800000000000000
+      internalID: 8711757136631266980
       vertices: []
       indices: 
       edges: []
@@ -2714,8 +2732,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b799ca77c63ac4210800000000000000
-      internalID: 1318608477172308347
+      spriteID: 3900d94d3d526fab0800000000000000
+      internalID: -4974747146648747885
       vertices: []
       indices: 
       edges: []
@@ -2735,8 +2753,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9aa022b1606411120800000000000000
-      internalID: 2382762669894666921
+      spriteID: 114a0ad00926820b0800000000000000
+      internalID: -5753240153122364399
       vertices: []
       indices: 
       edges: []
@@ -2756,8 +2774,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65551a2b483f0f8a0800000000000000
-      internalID: -6273246529668950698
+      spriteID: 2189bf7d0e64785c0800000000000000
+      internalID: -4213320994871601134
       vertices: []
       indices: 
       edges: []
@@ -2777,8 +2795,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 140d42b608db23f80800000000000000
-      internalID: -8128226018199285695
+      spriteID: cd99d23a19fc3bc50800000000000000
+      internalID: 6679910896735459804
       vertices: []
       indices: 
       edges: []
@@ -2798,8 +2816,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 336a63432bdd633b0800000000000000
-      internalID: -5532991334728161741
+      spriteID: b0b97926178336610800000000000000
+      internalID: 1613195151165332235
       vertices: []
       indices: 
       edges: []
@@ -2819,8 +2837,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 396d76d16aa9ef600800000000000000
-      internalID: 504010246560667283
+      spriteID: 2ee5286b4bbdd1a80800000000000000
+      internalID: -8494391752948293918
       vertices: []
       indices: 
       edges: []
@@ -2840,8 +2858,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80688142231ee2bf0800000000000000
-      internalID: -347092515790748152
+      spriteID: 02851b4f5e0851b10800000000000000
+      internalID: 1951607738676107296
       vertices: []
       indices: 
       edges: []
@@ -2861,8 +2879,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e005f1c804775370800000000000000
-      internalID: 8311239218298159328
+      spriteID: 06b5fb9c8ef072360800000000000000
+      internalID: 7144696826338171744
       vertices: []
       indices: 
       edges: []
@@ -2882,8 +2900,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3132b8015a2e85be0800000000000000
-      internalID: -1488190478270913773
+      spriteID: 713be67fcd5b27220800000000000000
+      internalID: 2482246305283224343
       vertices: []
       indices: 
       edges: []
@@ -2903,8 +2921,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73dbb09598f546c0800000000000000
-      internalID: -4159645359544740997
+      spriteID: 16003672c8a2cc590800000000000000
+      internalID: -7652694885364727711
       vertices: []
       indices: 
       edges: []
@@ -2924,8 +2942,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9c417771d7ab3be0800000000000000
-      internalID: -1496417933076640614
+      spriteID: 736b9c54c5f6ba870800000000000000
+      internalID: 8695165947667396151
       vertices: []
       indices: 
       edges: []
@@ -2945,8 +2963,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e6a987ec736cd900800000000000000
-      internalID: 710552229329348329
+      spriteID: 3967c27f2229f0650800000000000000
+      internalID: 6201335890785891987
       vertices: []
       indices: 
       edges: []
@@ -2966,8 +2984,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1917ac5499b3a1c90800000000000000
-      internalID: -7198375524911386223
+      spriteID: 952128e850b742710800000000000000
+      internalID: 1667593025829868121
       vertices: []
       indices: 
       edges: []
@@ -2987,8 +3005,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5302bde8001cd7a30800000000000000
-      internalID: 4214737034429538357
+      spriteID: 8d46d608d994b05c0800000000000000
+      internalID: -4248220882680585000
       vertices: []
       indices: 
       edges: []
@@ -3008,8 +3026,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f081c631da812660800000000000000
-      internalID: 7359315897271550200
+      spriteID: 57a97da56fa4a53a0800000000000000
+      internalID: -6675941075676849547
       vertices: []
       indices: 
       edges: []
@@ -3029,8 +3047,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0013c341681f5830800000000000000
-      internalID: 4061992194939228172
+      spriteID: 910ef477892f61710800000000000000
+      internalID: 1663783849010651161
       vertices: []
       indices: 
       edges: []
@@ -3050,8 +3068,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 502d7884c680bd850800000000000000
-      internalID: 6402720556403642885
+      spriteID: a2f19c56b907606d0800000000000000
+      internalID: -3024606287002788054
       vertices: []
       indices: 
       edges: []
@@ -3071,8 +3089,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ce6d80bc7415e790800000000000000
-      internalID: -7501567078545133887
+      spriteID: 089b5dfec435bd300800000000000000
+      internalID: 277907391919798656
       vertices: []
       indices: 
       edges: []
@@ -3092,8 +3110,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeb9a2614801dde80800000000000000
-      internalID: -8152341590977111062
+      spriteID: ea70a7f39e681f3f0800000000000000
+      internalID: -868764916755331154
       vertices: []
       indices: 
       edges: []
@@ -3113,8 +3131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf0f527c127e6a140800000000000000
-      internalID: 4730722590860374268
+      spriteID: da93b9f88389d12f0800000000000000
+      internalID: -1000476173511476819
       vertices: []
       indices: 
       edges: []
@@ -3134,8 +3152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1284365761b6bf6e0800000000000000
-      internalID: -1802729481628858335
+      spriteID: adfc57aa2dc14abf0800000000000000
+      internalID: -314094382880534566
       vertices: []
       indices: 
       edges: []
@@ -3155,8 +3173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3e9c9571d53b350800000000000000
-      internalID: 6031266680851260410
+      spriteID: c19d247dfadafc070800000000000000
+      internalID: 8128906823169399068
       vertices: []
       indices: 
       edges: []
@@ -3176,8 +3194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 582c924c8467b0100800000000000000
-      internalID: 75283873682539141
+      spriteID: 3d7c0e052c0ae9000800000000000000
+      internalID: 44649802761291731
       vertices: []
       indices: 
       edges: []
@@ -3197,8 +3215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5c712eaff534e10800000000000000
-      internalID: 2180692175717123501
+      spriteID: 33698b37075117920800000000000000
+      internalID: 2986191600645346867
       vertices: []
       indices: 
       edges: []
@@ -3218,8 +3236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 258e28176f0628bb0800000000000000
-      internalID: -4935275630062016430
+      spriteID: e18d41c05df4c8870800000000000000
+      internalID: 8686405557740165150
       vertices: []
       indices: 
       edges: []
@@ -3239,8 +3257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71c262dd72aad43c0800000000000000
-      internalID: -4373652574916170729
+      spriteID: c9f3e4bbce4240810800000000000000
+      internalID: 1730548755990462364
       vertices: []
       indices: 
       edges: []
@@ -4299,7 +4317,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_147
       rect:
         serializedVersion: 2
-        x: 1188
+        x: 108
         y: 2178
         width: 108
         height: 108
@@ -4320,7 +4338,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_148
       rect:
         serializedVersion: 2
-        x: 1296
+        x: 216
         y: 2178
         width: 108
         height: 108
@@ -4341,7 +4359,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_149
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 324
         y: 2178
         width: 108
         height: 108
@@ -4362,7 +4380,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_150
       rect:
         serializedVersion: 2
-        x: 1728
+        x: 432
         y: 2178
         width: 108
         height: 108
@@ -4383,7 +4401,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_151
       rect:
         serializedVersion: 2
-        x: 1836
+        x: 540
         y: 2178
         width: 108
         height: 108
@@ -4404,7 +4422,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_152
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 648
         y: 2178
         width: 108
         height: 108
@@ -4425,7 +4443,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_153
       rect:
         serializedVersion: 2
-        x: 2052
+        x: 756
         y: 2178
         width: 108
         height: 108
@@ -4446,7 +4464,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_154
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 864
         y: 2178
         width: 108
         height: 108
@@ -4467,8 +4485,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_155
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2070
+        x: 972
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4488,8 +4506,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_156
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 2070
+        x: 1080
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4509,8 +4527,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_157
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 2070
+        x: 1188
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4530,8 +4548,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_158
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 2070
+        x: 1296
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4551,8 +4569,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_159
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 2070
+        x: 1620
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4572,8 +4590,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_160
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 2070
+        x: 1728
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4593,8 +4611,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_161
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 2070
+        x: 1836
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4614,8 +4632,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_162
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 2070
+        x: 1944
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4635,8 +4653,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_163
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1962
+        x: 2052
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4656,8 +4674,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_164
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1962
+        x: 2160
+        y: 2178
         width: 108
         height: 108
       alignment: 0
@@ -4677,8 +4695,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_165
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 1962
+        x: 0
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4698,8 +4716,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_166
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1962
+        x: 1188
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4719,8 +4737,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_167
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1962
+        x: 1296
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4740,8 +4758,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_168
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1962
+        x: 1620
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4761,8 +4779,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_169
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 1962
+        x: 1728
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4782,8 +4800,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_170
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1854
+        x: 1836
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4803,8 +4821,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_171
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1854
+        x: 1944
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4824,8 +4842,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_172
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 1854
+        x: 2052
+        y: 2070
         width: 108
         height: 108
       alignment: 0
@@ -4845,8 +4863,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_173
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1854
+        x: 0
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4866,8 +4884,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_174
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1854
+        x: 1188
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4887,8 +4905,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_175
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1854
+        x: 1296
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4908,8 +4926,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_176
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1746
+        x: 1620
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4929,8 +4947,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_177
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1746
+        x: 1728
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4950,8 +4968,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_178
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 1746
+        x: 1836
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4971,8 +4989,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_179
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1746
+        x: 1944
+        y: 1962
         width: 108
         height: 108
       alignment: 0
@@ -4992,8 +5010,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_180
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1746
+        x: 0
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5013,8 +5031,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_181
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1746
+        x: 1188
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5034,8 +5052,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_182
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1638
+        x: 1296
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5055,8 +5073,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_183
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1638
+        x: 1620
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5076,8 +5094,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_184
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 1638
+        x: 1728
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5097,8 +5115,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_185
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1638
+        x: 1836
+        y: 1854
         width: 108
         height: 108
       alignment: 0
@@ -5118,8 +5136,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_186
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1638
+        x: 0
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5139,8 +5157,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_187
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1638
+        x: 1188
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5160,8 +5178,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_188
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 1638
+        x: 1296
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5181,8 +5199,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_189
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1530
+        x: 1620
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5202,8 +5220,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_190
       rect:
         serializedVersion: 2
-        x: 1188
-        y: 1530
+        x: 1728
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5223,8 +5241,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_191
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 1530
+        x: 1836
+        y: 1746
         width: 108
         height: 108
       alignment: 0
@@ -5244,8 +5262,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_192
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1530
+        x: 0
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5265,8 +5283,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_193
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1530
+        x: 1188
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5286,8 +5304,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_194
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1530
+        x: 1296
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5307,8 +5325,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_195
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 1530
+        x: 1620
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5328,8 +5346,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_196
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 1530
+        x: 1728
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5349,8 +5367,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_197
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1422
+        x: 1836
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5370,8 +5388,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_198
       rect:
         serializedVersion: 2
-        x: 108
-        y: 1422
+        x: 1944
+        y: 1638
         width: 108
         height: 108
       alignment: 0
@@ -5391,8 +5409,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_199
       rect:
         serializedVersion: 2
-        x: 216
-        y: 1422
+        x: 0
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5412,8 +5430,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_200
       rect:
         serializedVersion: 2
-        x: 324
-        y: 1422
+        x: 1188
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5433,8 +5451,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_201
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1422
+        x: 1296
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5454,8 +5472,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_202
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1422
+        x: 1620
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5475,8 +5493,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_203
       rect:
         serializedVersion: 2
-        x: 648
-        y: 1422
+        x: 1728
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5496,8 +5514,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_204
       rect:
         serializedVersion: 2
-        x: 756
-        y: 1422
+        x: 1836
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5517,8 +5535,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_205
       rect:
         serializedVersion: 2
-        x: 864
-        y: 1422
+        x: 1944
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5538,8 +5556,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_206
       rect:
         serializedVersion: 2
-        x: 972
-        y: 1422
+        x: 2052
+        y: 1530
         width: 108
         height: 108
       alignment: 0
@@ -5559,7 +5577,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_207
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 0
         y: 1422
         width: 108
         height: 108
@@ -5580,7 +5598,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_208
       rect:
         serializedVersion: 2
-        x: 1188
+        x: 108
         y: 1422
         width: 108
         height: 108
@@ -5601,7 +5619,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_209
       rect:
         serializedVersion: 2
-        x: 1296
+        x: 216
         y: 1422
         width: 108
         height: 108
@@ -5622,7 +5640,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_210
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 324
         y: 1422
         width: 108
         height: 108
@@ -5643,7 +5661,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_211
       rect:
         serializedVersion: 2
-        x: 1728
+        x: 432
         y: 1422
         width: 108
         height: 108
@@ -5664,7 +5682,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_212
       rect:
         serializedVersion: 2
-        x: 1836
+        x: 540
         y: 1422
         width: 108
         height: 108
@@ -5685,7 +5703,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_213
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 648
         y: 1422
         width: 108
         height: 108
@@ -5706,7 +5724,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_214
       rect:
         serializedVersion: 2
-        x: 2052
+        x: 756
         y: 1422
         width: 108
         height: 108
@@ -5727,7 +5745,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_215
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 864
         y: 1422
         width: 108
         height: 108
@@ -5748,8 +5766,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_216
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1314
+        x: 972
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5769,8 +5787,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_217
       rect:
         serializedVersion: 2
-        x: 108
-        y: 1314
+        x: 1080
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5790,8 +5808,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_218
       rect:
         serializedVersion: 2
-        x: 216
-        y: 1314
+        x: 1188
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5811,8 +5829,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_219
       rect:
         serializedVersion: 2
-        x: 324
-        y: 1314
+        x: 1296
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5832,8 +5850,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_220
       rect:
         serializedVersion: 2
-        x: 432
-        y: 1314
+        x: 1620
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5853,8 +5871,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_221
       rect:
         serializedVersion: 2
-        x: 540
-        y: 1314
+        x: 1728
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5874,8 +5892,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_222
       rect:
         serializedVersion: 2
-        x: 648
-        y: 1314
+        x: 1836
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5895,8 +5913,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_223
       rect:
         serializedVersion: 2
-        x: 756
-        y: 1314
+        x: 1944
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5916,8 +5934,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_224
       rect:
         serializedVersion: 2
-        x: 864
-        y: 1314
+        x: 2052
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5937,8 +5955,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_225
       rect:
         serializedVersion: 2
-        x: 972
-        y: 1314
+        x: 2160
+        y: 1422
         width: 108
         height: 108
       alignment: 0
@@ -5958,7 +5976,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_226
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 0
         y: 1314
         width: 108
         height: 108
@@ -5979,7 +5997,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_227
       rect:
         serializedVersion: 2
-        x: 1188
+        x: 108
         y: 1314
         width: 108
         height: 108
@@ -6000,7 +6018,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_228
       rect:
         serializedVersion: 2
-        x: 1296
+        x: 216
         y: 1314
         width: 108
         height: 108
@@ -6021,7 +6039,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_229
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 324
         y: 1314
         width: 108
         height: 108
@@ -6042,7 +6060,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_230
       rect:
         serializedVersion: 2
-        x: 1728
+        x: 432
         y: 1314
         width: 108
         height: 108
@@ -6063,7 +6081,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_231
       rect:
         serializedVersion: 2
-        x: 1836
+        x: 540
         y: 1314
         width: 108
         height: 108
@@ -6084,7 +6102,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_232
       rect:
         serializedVersion: 2
-        x: 1944
+        x: 648
         y: 1314
         width: 108
         height: 108
@@ -6105,7 +6123,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_233
       rect:
         serializedVersion: 2
-        x: 2052
+        x: 756
         y: 1314
         width: 108
         height: 108
@@ -6126,7 +6144,7 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_234
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 864
         y: 1314
         width: 108
         height: 108
@@ -6147,8 +6165,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_235
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1206
+        x: 972
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6168,8 +6186,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_236
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1206
+        x: 1080
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6189,8 +6207,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_237
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1206
+        x: 1188
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6210,8 +6228,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_238
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 1206
+        x: 1296
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6231,8 +6249,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_239
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 1206
+        x: 1620
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6252,8 +6270,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_240
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1206
+        x: 1728
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6273,8 +6291,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_241
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 1098
+        x: 1836
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6294,8 +6312,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_242
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 1098
+        x: 1944
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6315,8 +6333,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_243
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 1098
+        x: 2052
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6336,8 +6354,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_244
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 1098
+        x: 2160
+        y: 1314
         width: 108
         height: 108
       alignment: 0
@@ -6357,8 +6375,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_245
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 1098
+        x: 1620
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6378,8 +6396,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_246
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 1098
+        x: 1728
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6399,8 +6417,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_247
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 990
+        x: 1836
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6420,8 +6438,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_248
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 990
+        x: 1944
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6441,8 +6459,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_249
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 990
+        x: 2052
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6462,8 +6480,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_250
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 990
+        x: 2160
+        y: 1206
         width: 108
         height: 108
       alignment: 0
@@ -6483,8 +6501,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_251
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 990
+        x: 1620
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6504,8 +6522,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_252
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 990
+        x: 1728
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6525,8 +6543,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_253
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 882
+        x: 1836
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6546,8 +6564,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_254
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 882
+        x: 1944
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6567,8 +6585,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_255
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 882
+        x: 2052
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6588,8 +6606,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_256
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 882
+        x: 2160
+        y: 1098
         width: 108
         height: 108
       alignment: 0
@@ -6609,8 +6627,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_257
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 882
+        x: 1620
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6630,8 +6648,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_258
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 882
+        x: 1728
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6651,8 +6669,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_259
       rect:
         serializedVersion: 2
-        x: 1728
-        y: 774
+        x: 1836
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6672,8 +6690,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_260
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 774
+        x: 1944
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6693,8 +6711,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_261
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 774
+        x: 2052
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6714,8 +6732,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_262
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 774
+        x: 2160
+        y: 990
         width: 108
         height: 108
       alignment: 0
@@ -6735,8 +6753,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_263
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 774
+        x: 1620
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6756,8 +6774,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_264
       rect:
         serializedVersion: 2
-        x: 1836
-        y: 666
+        x: 1728
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6777,8 +6795,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_265
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 666
+        x: 1836
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6798,8 +6816,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_266
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 666
+        x: 1944
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6819,8 +6837,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_267
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 666
+        x: 2052
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6840,8 +6858,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_268
       rect:
         serializedVersion: 2
-        x: 1944
-        y: 558
+        x: 2160
+        y: 882
         width: 108
         height: 108
       alignment: 0
@@ -6861,8 +6879,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_269
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 558
+        x: 1728
+        y: 774
         width: 108
         height: 108
       alignment: 0
@@ -6882,8 +6900,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_270
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 558
+        x: 1836
+        y: 774
         width: 108
         height: 108
       alignment: 0
@@ -6903,8 +6921,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_271
       rect:
         serializedVersion: 2
-        x: 2052
-        y: 450
+        x: 1944
+        y: 774
         width: 108
         height: 108
       alignment: 0
@@ -6924,8 +6942,8 @@ TextureImporter:
       name: Newest_walls_outside_diagonal_272
       rect:
         serializedVersion: 2
-        x: 2160
-        y: 450
+        x: 2052
+        y: 774
         width: 108
         height: 108
       alignment: 0
@@ -6941,11 +6959,220 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_273
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 774
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58f5b9eee8a6c8c0800000000000000
+      internalID: -3979307476658554785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_274
+      rect:
+        serializedVersion: 2
+        x: 1836
+        y: 666
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47101a73e0ba77350800000000000000
+      internalID: 6014463904927777140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_275
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 666
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5c63a29e5c9c7d0800000000000000
+      internalID: -2897567280009919045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_276
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 666
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c0a4252c4414c90800000000000000
+      internalID: -7187387928911672281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_277
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 666
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28775e99f8d3772f0800000000000000
+      internalID: -975243107330852990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_278
+      rect:
+        serializedVersion: 2
+        x: 1944
+        y: 558
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4aad6331def2bc0800000000000000
+      internalID: -3805562493324319569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_279
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 558
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b2f5aea35cb65d60800000000000000
+      internalID: 7878691665729680052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_280
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 558
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdce8d52a6854e70800000000000000
+      internalID: 9098826654084419064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_281
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 450
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9479e6b9f617ad9f0800000000000000
+      internalID: -442916889179547831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Newest_walls_outside_diagonal_282
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 450
+        width: 108
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d6c7d6db79702d0800000000000000
+      internalID: -3312512161066226362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 2b856a5267ec5ab4c9c5d5130ac9925b
     internalID: 0
     vertices: []
     indices: 
