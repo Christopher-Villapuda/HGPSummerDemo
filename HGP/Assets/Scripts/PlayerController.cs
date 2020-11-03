@@ -15,6 +15,14 @@ public class PlayerController : MonoBehaviour
     private AnimatorController playerLeftIdle; // Plug in idle animation if you want!
     [SerializeField]
     private AnimatorController playerRightIdle;
+    [SerializeField]
+    private AnimatorController playerMovingUp;
+    [SerializeField]
+    private AnimatorController playerMovingDown;
+    [SerializeField]
+    private AnimatorController playerUpIdle;
+    [SerializeField]
+    private AnimatorController playerDownIdle;
 
     private float horizontalInput;
     private float verticalInput;
@@ -102,60 +110,86 @@ public class PlayerController : MonoBehaviour
 
         //velocity = new Vector2(xSpeed, ySpeed);
 
-        if (horizontalInput != 0)
-        {
-            if (horizontalInput > 0) // towards 1 = right
-            {
-                //Debug.Log("The player is moving right.");
-                playerAnimator.runtimeAnimatorController = playerMovingRight;
-                //SetMovingRightAnimBool();
-            }
-            else if (horizontalInput < 0)  // towards -1 = left
-            {
-                //Debug.Log("The player is moving left.");
-                playerAnimator.runtimeAnimatorController = playerMovingLeft;
-                //SetMovingLeftAnimBool();
-            }
-        }
-        else if (horizontalInput == 0)
-        {
-            if (playerAnimator.runtimeAnimatorController == playerMovingRight)
-            {
-                playerAnimator.runtimeAnimatorController = playerRightIdle;
-            }
-            else if (playerAnimator.runtimeAnimatorController == playerMovingLeft)
-            {
-                playerAnimator.runtimeAnimatorController = playerLeftIdle;
-            }
-        }
-        if (verticalInput != 0)
-        {
-            //if (horizontalInput > 0) // towards 1 = right
-            //{
-            //    Debug.Log("The player is moving right.");
-            //    playerAnimator.runtimeAnimatorController = playerMovingRight;
-            //    //SetMovingRightAnimBool();
-            //}
-            //else if (horizontalInput < 0)  // towards -1 = left
-            //{
-            //    Debug.Log("The player is moving left.");
-            //    playerAnimator.runtimeAnimatorController = playerMovingLeft;
-            //    //SetMovingLeftAnimBool();
-            //}
-        }
-        else if (verticalInput == 0)
-        {
-            //if (playerAnimator.runtimeAnimatorController == playerMovingRight)
-            //{
-            //    playerAnimator.runtimeAnimatorController = playerRightIdle;
-            //}
-            //else if (playerAnimator.runtimeAnimatorController == playerMovingLeft)
-            //{
-            //    playerAnimator.runtimeAnimatorController = playerLeftIdle;
-            //}
-        }
+        //if (horizontalInput != 0)
+        //{
+        //    if (horizontalInput > 0) // towards 1 = right
+        //    {
+        //        //Debug.Log("The player is moving right.");
+        //        playerAnimator.runtimeAnimatorController = playerMovingRight;
+        //        //SetMovingRightAnimBool();
+        //    }
+        //    else if (horizontalInput < 0)  // towards -1 = left
+        //    {
+        //        //Debug.Log("The player is moving left.");
+        //        playerAnimator.runtimeAnimatorController = playerMovingLeft;
+        //        //SetMovingLeftAnimBool();
+        //    }
+        //}
+        //else if (horizontalInput == 0)
+        //{
+        //    if (playerAnimator.runtimeAnimatorController == playerMovingRight)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = playerRightIdle;
+        //    }
+        //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = playerLeftIdle;
+        //    }
+        //}
+        //else if (verticalInput != 0)
+        //{
+        //    if (verticalInput > 0) // towards 1 = right
+        //    {
+        //        Debug.Log("The player is moving up.");
+        //        playerAnimator.runtimeAnimatorController = playerMovingUp;
+        //        //SetMovingRightAnimBool();
+        //    }
+        //    else if (verticalInput < 0)  // towards -1 = left
+        //    {
+        //        Debug.Log("The player is moving down.");
+        //        playerAnimator.runtimeAnimatorController = playerMovingDown;
+        //        //SetMovingLeftAnimBool();
+        //    }
+        //}
+        //else if (verticalInput == 0)
+        //{
+        //    if (playerAnimator.runtimeAnimatorController == playerMovingUp)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = playerRightIdle;
+        //    }
+        //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = playerLeftIdle;
+        //    }
+        //}
 
+        var hAbsolute = Mathf.Abs(horizontalInput);
+        var vAbsolute = Mathf.Abs(verticalInput);
 
+        if (hAbsolute > vAbsolute)
+        {
+            if (horizontalInput > 0) playerAnimator.runtimeAnimatorController = playerMovingRight;
+            else if (horizontalInput < 0) playerAnimator.runtimeAnimatorController = playerMovingLeft;
+            //else if (horizontalInput == 0)
+            //{
+            //    if (playerAnimator.runtimeAnimatorController == playerMovingRight) playerAnimator.runtimeAnimatorController = playerRightIdle;
+            //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft) playerAnimator.runtimeAnimatorController = playerLeftIdle;
+            //}
+        }
+        else if (vAbsolute > hAbsolute)
+        {
+            if (verticalInput > 0) playerAnimator.runtimeAnimatorController = playerMovingUp;
+            else if (verticalInput < 0) playerAnimator.runtimeAnimatorController = playerMovingDown;
+            //else if (verticalInput == 0)
+            //{
+            //    if (playerAnimator.runtimeAnimatorController == playerMovingUp) playerAnimator.runtimeAnimatorController = playerUpIdle;
+            //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown) playerAnimator.runtimeAnimatorController = playerDownIdle;
+            //}
+        }
+        else if (hAbsolute == 0 && vAbsolute == 0)
+        {
+            playerAnimator.runtimeAnimatorController = null;
+        }
 
         //rBD2D.MovePosition(rBD2D.position + velocity);
         rBD2D.MovePosition(position);
@@ -181,5 +215,20 @@ public class PlayerController : MonoBehaviour
         playerAnimator.SetBool("MovingLeft", false);
         playerAnimator.SetBool("MovingUp", false);
         playerAnimator.SetBool("MovingDown", false);
+    }
+
+    private void SetMovingUpAnimBool()
+    {
+        playerAnimator.SetBool("MovingLeft", false);
+        playerAnimator.SetBool("MovingRight", false);
+        playerAnimator.SetBool("MovingUp", true);
+        playerAnimator.SetBool("MovingDown", false);
+    }
+    private void SetMovingDownAnimBool()
+    {
+        playerAnimator.SetBool("MovingRight", false);
+        playerAnimator.SetBool("MovingLeft", false);
+        playerAnimator.SetBool("MovingUp", false);
+        playerAnimator.SetBool("MovingDown", true);
     }
 }

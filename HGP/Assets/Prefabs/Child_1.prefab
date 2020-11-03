@@ -186,8 +186,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -545,6 +545,8 @@ MonoBehaviour:
   playerMovingRight: {fileID: 9100000, guid: 13d39a1f2872bc544847c689c7a4ca80, type: 2}
   playerLeftIdle: {fileID: 0}
   playerRightIdle: {fileID: 0}
+  playerMovingUp: {fileID: 9100000, guid: 18f4d44a2683def49a2ba198cf05e881, type: 2}
+  playerMovingDown: {fileID: 9100000, guid: fc94140e44c8ae14793c2ad1a1faa03d, type: 2}
   speed: 10
   sprint: 2
   maxStamina: 20
