@@ -17,13 +17,40 @@ public class PlayerHide : MonoBehaviour
     private float newXpos;
     private float newYpos;
     private bool hideAction = false;
+    private bool leavingHiding = false;
+    [SerializeField]
+    private float hideSpeed = 15;
+    private Rigidbody2D rBD2D;
+
+    void Awake()
+    {
+        rBD2D = GetComponent<Rigidbody2D>();
+        rBD2D.useFullKinematicContacts = true;
+    }
 
     void FixedUpdate()
     {
+        float step = hideSpeed * Time.deltaTime;
         if (hiding)
         {
-            transform.position = new Vector2(newXpos, newYpos);
+            transform.position = Vector2.MoveTowards(transform.position, new Vector2(newXpos, newYpos), step);
+            //rBD2D.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(newXpos,newYpos),step));
         }
+        else
+        {
+            if (leavingHiding)
+            {
+                //transform.position = new Vector2(originalXpos, originalYpos);
+                Vector2 originalPosition = new Vector2(originalXpos, originalYpos);
+                transform.position = Vector2.MoveTowards(transform.position, originalPosition, step);
+                if ((Vector2)transform.position == originalPosition)
+                {
+                    leavingHiding = false;
+                    rBD2D.isKinematic = false;
+                }
+            }
+        }
+        //Debug.Log(hiding + " " + leavingHiding);
     }
 
     void Update()
@@ -43,7 +70,7 @@ public class PlayerHide : MonoBehaviour
                 if (hiding)
                 {
                     hiding = false;
-                    transform.position = new Vector2(originalXpos, originalYpos);
+                    leavingHiding = true;
                 }
                 else
                 {
@@ -52,9 +79,11 @@ public class PlayerHide : MonoBehaviour
                     newYpos = col.gameObject.transform.position.y;
                     originalXpos = transform.position.x;
                     originalYpos = transform.position.y;
+                    rBD2D.isKinematic = true;
                 }
             }
             hideAction = false;
         }
+        Debug.Log("colliding");
     }
 }
