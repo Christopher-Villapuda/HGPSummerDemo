@@ -93,7 +93,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5056646922109944839}
   - component: {fileID: 5056646922109944838}
-  - component: {fileID: 5056646922109944836}
   - component: {fileID: 5056646922109944833}
   - component: {fileID: 5056646922109944837}
   - component: {fileID: 5056646922109944834}
@@ -101,10 +100,12 @@ GameObject:
   - component: {fileID: 5056646922109944832}
   - component: {fileID: 5056646922109944847}
   - component: {fileID: 5056646922109944846}
+  - component: {fileID: 3068508492426276930}
   - component: {fileID: 5056646922109944844}
+  - component: {fileID: 7134974767945852990}
   m_Layer: 0
-  m_Name: Child 1
-  m_TagString: Untagged
+  m_Name: Child_1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,22 +176,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5056646922109944836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5056646922109946873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ebfa451c1c9f55488c2850f84ad752a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMovingLeft: {fileID: 9100000, guid: 49293d398b104ac4ab4214ccc3217ca3, type: 2}
-  playerMovingRight: {fileID: 9100000, guid: 13d39a1f2872bc544847c689c7a4ca80, type: 2}
-  playerLeftIdle: {fileID: 9100000, guid: 5be6095ce14d3cf498b762591d7b945d, type: 2}
-  playerRightIdle: {fileID: 9100000, guid: 7fa65c0a3c2272a49aebff54fc43cc24, type: 2}
 --- !u!61 &5056646922109944833
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -201,8 +186,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -258,12 +243,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &5056646922109944835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -340,7 +325,7 @@ MonoBehaviour:
     onConversationStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5056646922109944836}
+        - m_Target: {fileID: 0}
           m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
@@ -365,7 +350,7 @@ MonoBehaviour:
     onConversationEnd:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 5056646922109944836}
+        - m_Target: {fileID: 0}
           m_MethodName: set_enabled
           m_Mode: 6
           m_Arguments:
@@ -512,6 +497,19 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: 6553818e56194084498366af92bb0bfc, type: 2}
+--- !u!114 &3068508492426276930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056646922109946873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9624662d54b8a6d41b40cb4c690fe880, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideSpeed: 15
 --- !u!95 &5056646922109944844
 Animator:
   serializedVersion: 3
@@ -531,3 +529,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7134974767945852990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056646922109946873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e282e11779f402468aae4e30be0f7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovingLeft: {fileID: 9100000, guid: 49293d398b104ac4ab4214ccc3217ca3, type: 2}
+  playerMovingRight: {fileID: 9100000, guid: 13d39a1f2872bc544847c689c7a4ca80, type: 2}
+  playerLeftIdle: {fileID: 0}
+  playerRightIdle: {fileID: 0}
+  playerMovingUp: {fileID: 9100000, guid: 18f4d44a2683def49a2ba198cf05e881, type: 2}
+  playerMovingDown: {fileID: 9100000, guid: fc94140e44c8ae14793c2ad1a1faa03d, type: 2}
+  speed: 10
+  sprint: 2
+  maxStamina: 20
+  staminaDrain: 0.1
+  staminaGain: 0.2
