@@ -31,21 +31,37 @@ public class PlayerController : MonoBehaviour
     private float speed = 15;
     //private float xRange = 30;
     //private float yRange = 30;
-    private float xSpeed = 0f;
-    private float ySpeed = 0f;
     [SerializeField]
     private float sprint = 5;
     private float sprintSpeed;
     [SerializeField]
     private float maxStamina = 5;
+    public float MaxStamina
+    {
+        get
+        {
+            return maxStamina;
+        }
+    }
     [SerializeField]
     private float staminaDrain = 0.1f;
     [SerializeField]
     private float staminaGain = 0.2f;
     private float stamina;
+    public float Stamina
+    {
+        get
+        {
+            return stamina;
+        }
+    }
     private bool exhausted = false;
     private Vector2 velocity;
     private Rigidbody2D rBD2D;
+    private float xSpeed;
+    private float ySpeed;
+    private float prevX;
+    private float prevY;
 
     private Animator playerAnimator;
 
@@ -56,6 +72,8 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         rBD2D = GetComponent<Rigidbody2D>();
         stamina = maxStamina;
+        prevX = transform.position.x;
+        prevY = transform.position.y;
         //SetNoMovingAnimBool();
     }
 
@@ -69,7 +87,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!exhausted)
         {
-            if (Input.GetKey("left shift"))
+            if (Input.GetKey("left shift") && (horizontalInput != 0 || verticalInput != 0) && (xSpeed != 0 || ySpeed != 0))
             {
                 sprintSpeed = sprint;
                 stamina -= staminaDrain;
@@ -105,6 +123,12 @@ public class PlayerController : MonoBehaviour
 
         position.x = position.x + speed * horizontalInput * Time.deltaTime * sprintSpeed;
         position.y = position.y + speed * verticalInput * Time.deltaTime * sprintSpeed;
+
+        xSpeed = transform.position.x - prevX;
+        ySpeed = transform.position.y - prevY;
+
+        prevX = transform.position.x;
+        prevY = transform.position.y;
 
         //xSpeed = speed * horizontalInput * Time.deltaTime;
         //ySpeed = speed * verticalInput * Time.deltaTime;
@@ -164,72 +188,85 @@ public class PlayerController : MonoBehaviour
         //    }
         //}
 
-        var hAbsolute = Mathf.Abs(horizontalInput);
-        var vAbsolute = Mathf.Abs(verticalInput);
+        var hAbsolute = Mathf.Abs(xSpeed);
+        var vAbsolute = Mathf.Abs(ySpeed);
+        var difference = hAbsolute - vAbsolute;
+        var absoluteDifference = Mathf.Abs(difference);
 
-        if (hAbsolute > vAbsolute)
-        {
-            if (horizontalInput > 0) playerAnimator.runtimeAnimatorController = playerMovingRight;
-            else if (horizontalInput < 0) playerAnimator.runtimeAnimatorController = playerMovingLeft;
-            //else if (horizontalInput == 0)
-            //{
-            //    if (playerAnimator.runtimeAnimatorController == playerMovingRight) playerAnimator.runtimeAnimatorController = playerRightIdle;
-            //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft) playerAnimator.runtimeAnimatorController = playerLeftIdle;
-            //}
-        }
-        else if (vAbsolute > hAbsolute)
-        {
-            if (verticalInput > 0) playerAnimator.runtimeAnimatorController = playerMovingUp;
-            else if (verticalInput < 0) playerAnimator.runtimeAnimatorController = playerMovingDown;
-            //else if (verticalInput == 0)
-            //{
-            //    if (playerAnimator.runtimeAnimatorController == playerMovingUp) playerAnimator.runtimeAnimatorController = playerUpIdle;
-            //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown) playerAnimator.runtimeAnimatorController = playerDownIdle;
-            //}
-        }
-        else if (hAbsolute == 0 && vAbsolute == 0)
-        {
-            playerAnimator.runtimeAnimatorController = null;
-        }
+        playerAnimator.SetFloat("X Speed", xSpeed);
+        playerAnimator.SetFloat("Y Speed", ySpeed);
+        playerAnimator.SetFloat("Horizontal Absolute Value", hAbsolute);
+        playerAnimator.SetFloat("Vertical Absolute Value", vAbsolute);
+        playerAnimator.SetFloat("Difference", difference);
+        playerAnimator.SetFloat("Absolute Value Difference", absoluteDifference);
+        //Debug.Log(absoluteDifference);
+
+        //if (absoluteDifference < 0.001)
+        //{
+        //    if (hAbsolute == 0 && vAbsolute == 0)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = null;
+        //    }
+        //}
+        //else if (hAbsolute > vAbsolute)
+        //{
+        //    if (xSpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingRight;
+        //    else if (xSpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingLeft;
+        //    //else if (horizontalInput == 0)
+        //    //{
+        //    //    if (playerAnimator.runtimeAnimatorController == playerMovingRight) playerAnimator.runtimeAnimatorController = playerRightIdle;
+        //    //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft) playerAnimator.runtimeAnimatorController = playerLeftIdle;
+        //    //}
+        //}
+        //else if (vAbsolute > hAbsolute)
+        //{
+        //    if (ySpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingUp;
+        //    else if (ySpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingDown;
+        //    //else if (verticalInput == 0)
+        //    //{
+        //    //    if (playerAnimator.runtimeAnimatorController == playerMovingUp) playerAnimator.runtimeAnimatorController = playerUpIdle;
+        //    //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown) playerAnimator.runtimeAnimatorController = playerDownIdle;
+        //    //}
+        //}
 
         //rBD2D.MovePosition(rBD2D.position + velocity);
         rBD2D.MovePosition(position);
     }
 
-    private void SetNoMovingAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingLeftAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", true);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingRightAnimBool()
-    {
-        playerAnimator.SetBool("MovingRight", true);
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
+    //private void SetNoMovingAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingLeftAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", true);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingRightAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingRight", true);
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
 
-    private void SetMovingUpAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", true);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingDownAnimBool()
-    {
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", true);
-    }
+    //private void SetMovingUpAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", true);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingDownAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", true);
+    //}
 }
