@@ -189,37 +189,44 @@ public class PlayerController : MonoBehaviour
 
         var hAbsolute = Mathf.Abs(xSpeed);
         var vAbsolute = Mathf.Abs(ySpeed);
-        var absoluteDifference = Mathf.Abs(hAbsolute - vAbsolute);
+        var difference = hAbsolute - vAbsolute;
+        var absoluteDifference = Mathf.Abs(difference);
 
-        Debug.Log(absoluteDifference);
+        playerAnimator.SetFloat("X Speed", xSpeed);
+        playerAnimator.SetFloat("Y Speed", ySpeed);
+        playerAnimator.SetFloat("Horizontal Absolute Value", hAbsolute);
+        playerAnimator.SetFloat("Vertical Absolute Value", vAbsolute);
+        playerAnimator.SetFloat("Difference", difference);
+        playerAnimator.SetFloat("Absolute Value Difference", absoluteDifference);
+        //Debug.Log(absoluteDifference);
 
-        if (absoluteDifference < 0.001)
-        {
-            if (hAbsolute == 0 && vAbsolute == 0)
-            {
-                playerAnimator.runtimeAnimatorController = null;
-            }
-        }
-        else if (hAbsolute > vAbsolute)
-        {
-            if (xSpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingRight;
-            else if (xSpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingLeft;
-            //else if (horizontalInput == 0)
-            //{
-            //    if (playerAnimator.runtimeAnimatorController == playerMovingRight) playerAnimator.runtimeAnimatorController = playerRightIdle;
-            //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft) playerAnimator.runtimeAnimatorController = playerLeftIdle;
-            //}
-        }
-        else if (vAbsolute > hAbsolute)
-        {
-            if (ySpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingUp;
-            else if (ySpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingDown;
-            //else if (verticalInput == 0)
-            //{
-            //    if (playerAnimator.runtimeAnimatorController == playerMovingUp) playerAnimator.runtimeAnimatorController = playerUpIdle;
-            //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown) playerAnimator.runtimeAnimatorController = playerDownIdle;
-            //}
-        }
+        //if (absoluteDifference < 0.001)
+        //{
+        //    if (hAbsolute == 0 && vAbsolute == 0)
+        //    {
+        //        playerAnimator.runtimeAnimatorController = null;
+        //    }
+        //}
+        //else if (hAbsolute > vAbsolute)
+        //{
+        //    if (xSpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingRight;
+        //    else if (xSpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingLeft;
+        //    //else if (horizontalInput == 0)
+        //    //{
+        //    //    if (playerAnimator.runtimeAnimatorController == playerMovingRight) playerAnimator.runtimeAnimatorController = playerRightIdle;
+        //    //    else if (playerAnimator.runtimeAnimatorController == playerMovingLeft) playerAnimator.runtimeAnimatorController = playerLeftIdle;
+        //    //}
+        //}
+        //else if (vAbsolute > hAbsolute)
+        //{
+        //    if (ySpeed > 0) playerAnimator.runtimeAnimatorController = playerMovingUp;
+        //    else if (ySpeed < 0) playerAnimator.runtimeAnimatorController = playerMovingDown;
+        //    //else if (verticalInput == 0)
+        //    //{
+        //    //    if (playerAnimator.runtimeAnimatorController == playerMovingUp) playerAnimator.runtimeAnimatorController = playerUpIdle;
+        //    //    else if (playerAnimator.runtimeAnimatorController == playerMovingDown) playerAnimator.runtimeAnimatorController = playerDownIdle;
+        //    //}
+        //}
 
         //rBD2D.MovePosition(rBD2D.position + velocity);
         rBD2D.MovePosition(position);
