@@ -233,40 +233,40 @@ public class PlayerController : MonoBehaviour
         rBD2D.MovePosition(position);
     }
 
-    private void SetNoMovingAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingLeftAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", true);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingRightAnimBool()
-    {
-        playerAnimator.SetBool("MovingRight", true);
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", false);
-    }
+    //private void SetNoMovingAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingLeftAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", true);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingRightAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingRight", true);
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
 
-    private void SetMovingUpAnimBool()
-    {
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingUp", true);
-        playerAnimator.SetBool("MovingDown", false);
-    }
-    private void SetMovingDownAnimBool()
-    {
-        playerAnimator.SetBool("MovingRight", false);
-        playerAnimator.SetBool("MovingLeft", false);
-        playerAnimator.SetBool("MovingUp", false);
-        playerAnimator.SetBool("MovingDown", true);
-    }
+    //private void SetMovingUpAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingUp", true);
+    //    playerAnimator.SetBool("MovingDown", false);
+    //}
+    //private void SetMovingDownAnimBool()
+    //{
+    //    playerAnimator.SetBool("MovingRight", false);
+    //    playerAnimator.SetBool("MovingLeft", false);
+    //    playerAnimator.SetBool("MovingUp", false);
+    //    playerAnimator.SetBool("MovingDown", true);
+    //}
 }
