@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Animations;
 using UnityEngine;
 
@@ -12,17 +13,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private AnimatorController playerMovingRight;
     [SerializeField]
-    private AnimatorController playerLeftIdle; // Plug in idle animation if you want!
-    [SerializeField]
-    private AnimatorController playerRightIdle;
-    [SerializeField]
+    //private AnimatorController playerLeftIdle; // Plug in idle animation if you want!
+    //[SerializeField]
+    //private AnimatorController playerRightIdle;
+    //[SerializeField]
     private AnimatorController playerMovingUp;
     [SerializeField]
     private AnimatorController playerMovingDown;
     [SerializeField]
-    private AnimatorController playerUpIdle;
-    [SerializeField]
-    private AnimatorController playerDownIdle;
+    //private AnimatorController playerUpIdle;
+    //[SerializeField]
+    //private AnimatorController playerDownIdle;
 
     private float horizontalInput;
     private float verticalInput;
