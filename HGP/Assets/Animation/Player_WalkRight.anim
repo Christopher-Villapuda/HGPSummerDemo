@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WALK_FRONT
+  m_Name: Player_WalkRight
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,16 +20,16 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2401747333031848679, guid: a67dca51116fcce48a81097318c9c908,
+      value: {fileID: 1386242899359792055, guid: bbf8d3ba14b534d4eb61ad5874cd33bd,
         type: 3}
     - time: 0.25
-      value: {fileID: 8472158434390132722, guid: a67dca51116fcce48a81097318c9c908,
+      value: {fileID: -1688366414542695498, guid: bbf8d3ba14b534d4eb61ad5874cd33bd,
         type: 3}
     - time: 0.5
-      value: {fileID: 6922913395902996146, guid: a67dca51116fcce48a81097318c9c908,
+      value: {fileID: -640278840379877337, guid: bbf8d3ba14b534d4eb61ad5874cd33bd,
         type: 3}
     - time: 0.75
-      value: {fileID: 7694380898903332369, guid: a67dca51116fcce48a81097318c9c908,
+      value: {fileID: 5762418666124380640, guid: bbf8d3ba14b534d4eb61ad5874cd33bd,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -41,8 +41,19 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 1386242899359792055, guid: bbf8d3ba14b534d4eb61ad5874cd33bd, type: 3}
+    - {fileID: -1688366414542695498, guid: bbf8d3ba14b534d4eb61ad5874cd33bd, type: 3}
+    - {fileID: -640278840379877337, guid: bbf8d3ba14b534d4eb61ad5874cd33bd, type: 3}
+    - {fileID: 5762418666124380640, guid: bbf8d3ba14b534d4eb61ad5874cd33bd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
