@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Background
+  - Prop
   layers:
   - Default
   - TransparentFX
@@ -13,9 +15,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Background
+  - Background Walls
+  - Signs
   - 
   - 
   - 
@@ -38,6 +40,36 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1693030067
+    locked: 0
+  - name: Background Walls
+    uniqueID: 3514153053
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Signs
+    uniqueID: 1173865939
+    locked: 0
+  - name: DR1
+    uniqueID: 3481113547
+    locked: 0
+  - name: DR2
+    uniqueID: 125173539
+    locked: 0
+  - name: DR3
+    uniqueID: 1069830365
+    locked: 0
+  - name: DR4
+    uniqueID: 1654325665
+    locked: 0
+  - name: DR5
+    uniqueID: 809032671
+    locked: 0
+  - name: DR6
+    uniqueID: 3270510659
+    locked: 0
+  - name: People
+    uniqueID: 1560997433
     locked: 0
