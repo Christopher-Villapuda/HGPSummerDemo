@@ -221,6 +221,11 @@ PrefabInstance:
       propertyPath: volume
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 723c6a2b67c6c34499f0301928297da5, type: 3}
     - target: {fileID: 764414572192000971, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: m_LocalPosition.x
