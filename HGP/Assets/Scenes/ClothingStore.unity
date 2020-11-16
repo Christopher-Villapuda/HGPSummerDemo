@@ -1716,7 +1716,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 142228911}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -70385,7 +70397,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 459823187}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -74346,7 +74370,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1180754421}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -76493,7 +76529,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1418578123}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -77326,7 +77374,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1489724194}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -80743,7 +80803,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 1905108664}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
