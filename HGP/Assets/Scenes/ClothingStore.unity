@@ -586,7 +586,19 @@ MonoBehaviour:
         m_Calls: []
     onConversationResponseMenu:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 28024437}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationResponseMenuTimeout:
       m_PersistentCalls:
         m_Calls: []
@@ -70463,7 +70475,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 99f74edbea9f2fc46b0a53af726b755b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -71620,7 +71632,7 @@ PrefabInstance:
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 963cdc7e7ba17db47ba95df636cad31a, type: 3}
+      objectReference: {fileID: 8300000, guid: 33b499e66fb555c448bded105dde72d3, type: 3}
     - target: {fileID: 764414572192000971, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -78055,7 +78067,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 99f74edbea9f2fc46b0a53af726b755b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
