@@ -520,7 +520,7 @@ Animator:
   m_GameObject: {fileID: 5056646922109946873}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 85afbd0c72f9a424b936ceb687e977ec, type: 2}
+  m_Controller: {fileID: 9100000, guid: 295735d788dcd3b4ba4cb459379a6da6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -541,14 +541,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e282e11779f402468aae4e30be0f7e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovingLeft: {fileID: 9100000, guid: 49293d398b104ac4ab4214ccc3217ca3, type: 2}
-  playerMovingRight: {fileID: 9100000, guid: 13d39a1f2872bc544847c689c7a4ca80, type: 2}
-  playerLeftIdle: {fileID: 0}
-  playerRightIdle: {fileID: 0}
-  playerMovingUp: {fileID: 9100000, guid: 18f4d44a2683def49a2ba198cf05e881, type: 2}
-  playerMovingDown: {fileID: 9100000, guid: fc94140e44c8ae14793c2ad1a1faa03d, type: 2}
-  playerUpIdle: {fileID: 0}
-  playerDownIdle: {fileID: 0}
   speed: 10
   sprint: 2
   maxStamina: 20
