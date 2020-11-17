@@ -34,13 +34,16 @@ public class AUDIOFootstepsScript : MonoBehaviour
 
     public void FootSteps()
     {
-        // Sets audioclip
-        source.clip = footstep[Random.Range(0, footstep.Length)];
-        //Instantiating new float for pitch using a random.range to calculate between to variables (for variation)
-        pitch = Random.Range(pitchMin, pitchMax);
-        //Sets the pitch to the float
-        source.pitch = pitch;
-        //Plays the footstep. 
-        source.Play();
+        if (!source.isPlaying)
+        {
+            // Sets audioclip
+            source.clip = footstep[Random.Range(0, footstep.Length)];
+            //Instantiating new float for pitch using a random.range to calculate between to variables (for variation)
+            pitch = Random.Range(pitchMin, pitchMax);
+            //Sets the pitch to the float
+            source.pitch = pitch;
+            //Plays the footstep. 
+            source.Play();
+        }
     }
 }
