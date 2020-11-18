@@ -28,19 +28,22 @@ public class AUDIOFootstepsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Check to see if any of these keys are pressed down
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) && !source.isPlaying)
-        {
-                // Sets audioclip
-                source.clip = footstep[Random.Range(0, footstep.Length)];
-                //Instantiating new float for pitch using a random.range to calculate between to variables (for variation)
-                pitch = Random.Range(pitchMin, pitchMax);
-                //Sets the pitch to the float
-                source.pitch = pitch;
-                //Plays the footstep. 
-                source.Play();
-            
-        }
+        
        
+    }
+
+    public void FootSteps()
+    {
+        if (!source.isPlaying)
+        {
+            // Sets audioclip
+            source.clip = footstep[Random.Range(0, footstep.Length)];
+            //Instantiating new float for pitch using a random.range to calculate between to variables (for variation)
+            pitch = Random.Range(pitchMin, pitchMax);
+            //Sets the pitch to the float
+            source.pitch = pitch;
+            //Plays the footstep. 
+            source.Play();
+        }
     }
 }

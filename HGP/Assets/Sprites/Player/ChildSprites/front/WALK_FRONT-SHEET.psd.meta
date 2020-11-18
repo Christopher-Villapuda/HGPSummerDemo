@@ -14,6 +14,21 @@ TextureImporter:
   - first:
       213: 7694380898903332369
     second: WALK_FRONT-SHEET_3
+  - first:
+      213: -8835406530933302003
+    second: WALK_FRONT-SHEET_0
+  - first:
+      213: -7276404741434176577
+    second: WALK_FRONT-SHEET_1
+  - first:
+      213: 1577884676124650864
+    second: WALK_FRONT-SHEET_2
+  - first:
+      213: 1522646437772286053
+    second: WALK_FRONT-SHEET_3
+  - first:
+      213: -1826024083838283976
+    second: WALK_FRONT-SHEET_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,10 +105,10 @@ TextureImporter:
       name: WALK_FRONT-SHEET_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 150
-        height: 150
+        x: 30
+        y: 1
+        width: 77
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -101,8 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eaea917978b45120800000000000000
-      internalID: 2401747333031848679
+      spriteID: d0ddd857294526580800000000000000
+      internalID: -8835406530933302003
       vertices: []
       indices: 
       edges: []
@@ -111,10 +126,10 @@ TextureImporter:
       name: WALK_FRONT-SHEET_1
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 150
-        height: 150
+        x: 180
+        y: 1
+        width: 77
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,8 +137,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f747aa6537239570800000000000000
-      internalID: 8472158434390132722
+      spriteID: fbb09d09074050b90800000000000000
+      internalID: -7276404741434176577
       vertices: []
       indices: 
       edges: []
@@ -132,10 +147,10 @@ TextureImporter:
       name: WALK_FRONT-SHEET_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 150
-        height: 150
+        x: 330
+        y: 1
+        width: 77
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,8 +158,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2be579ded01231060800000000000000
-      internalID: 6922913395902996146
+      spriteID: 07d21f0c0c5c5e510800000000000000
+      internalID: 1577884676124650864
       vertices: []
       indices: 
       edges: []
@@ -153,10 +168,10 @@ TextureImporter:
       name: WALK_FRONT-SHEET_3
       rect:
         serializedVersion: 2
-        x: 450
-        y: 0
-        width: 150
-        height: 150
+        x: 480
+        y: 1
+        width: 77
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +179,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1161fa539aee7ca60800000000000000
-      internalID: 7694380898903332369
+      spriteID: 5685ee92ed6812510800000000000000
+      internalID: 1522646437772286053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WALK_FRONT-SHEET_4
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 87
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 9, y: 0, z: 1, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fc28b35c8a8a6e0800000000000000
+      internalID: -1826024083838283976
       vertices: []
       indices: 
       edges: []
