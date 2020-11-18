@@ -6,8 +6,12 @@ public class NodePath : MonoBehaviour
 {
     [SerializeField]
     List<GameObject> nodes;
+    [SerializeField]
     float speed = 5.0f;
     int nodeCount = 0;
+    [SerializeField]
+    int waitTime = 3;
+    bool waiting = false;
 
     void FixedUpdate()
     {
@@ -22,9 +26,19 @@ public class NodePath : MonoBehaviour
             }
             else
             {
-                nodeCount++;
+                if (!waiting)
+                {
+                    StartCoroutine("WaitTime");
+                }
             }
         }
-        Debug.Log(transform.position + " " + nodes[nodeCount].transform.position);
+    }
+
+    IEnumerator WaitTime()
+    {
+        waiting = true;
+        yield return new WaitForSeconds(waitTime);
+        waiting = false;
+        nodeCount++;
     }
 }
