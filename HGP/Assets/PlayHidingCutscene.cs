@@ -6,7 +6,7 @@ public class PlayHidingCutscene : MonoBehaviour
 {
     public GameObject thePlayer;
     public GameObject introAnimVideoController;
-    public var VideoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
+    //public var VideoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
 
     void OnTriggerEnter(Collider other)
     {
@@ -18,7 +18,7 @@ public class PlayHidingCutscene : MonoBehaviour
         thePlayer.SetActive(false);
 
         //idk if this works i've never used C# in unity before, but this is supposed to play the video once the collider is triggered
-        videoPlayer.Play();
+        //videoPlayer.Play();
         //this basically ends the cutscene and gives the player control again
         StartCoroutine(FinishCut());
 
@@ -29,7 +29,7 @@ public class PlayHidingCutscene : MonoBehaviour
         //feel free to change the seconds as needed, i set it to the same time as my animation
         yield return new WaitForSeconds(6);
         thePlayer.SetActive(true);
-        hidingVideoController.SetActive(false);
+        //hidingVideoController.SetActive(false);
 
     }
 
