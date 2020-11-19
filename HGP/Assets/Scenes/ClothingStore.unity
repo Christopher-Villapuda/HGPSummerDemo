@@ -70394,16 +70394,50 @@ MonoBehaviour:
           m_CallState: 2
     onConversationEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 459823187}
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationCancelled:
       m_PersistentCalls:
         m_Calls: []
     onConversationLine:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 459823187}
+          m_MethodName: PlayOneShot
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8300000, guid: 99f74edbea9f2fc46b0a53af726b755b,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationLineEnd:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 459823187}
+          m_MethodName: Stop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     onConversationLineCancelled:
       m_PersistentCalls:
         m_Calls: []
@@ -71333,12 +71367,12 @@ PrefabInstance:
     - target: {fileID: 8697157824809882724, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.885475
+      value: -13.71
       objectReference: {fileID: 0}
     - target: {fileID: 8697157824809882724, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.8605633
+      value: -2.11
       objectReference: {fileID: 0}
     - target: {fileID: 8697157824809882724, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
@@ -77031,6 +77065,7 @@ GameObject:
   - component: {fileID: 1489724195}
   - component: {fileID: 1489724189}
   - component: {fileID: 1489724194}
+  - component: {fileID: 1489724196}
   m_Layer: 0
   m_Name: Fashionista
   m_TagString: Untagged
@@ -77256,7 +77291,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 99f74edbea9f2fc46b0a53af726b755b, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -77358,8 +77393,8 @@ MonoBehaviour:
     onConversationStart:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1489724194}
-          m_MethodName: Play
+        - m_Target: {fileID: 1489724196}
+          m_MethodName: NPCDialogue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -77387,13 +77422,12 @@ MonoBehaviour:
     onConversationResponseMenu:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1489724194}
-          m_MethodName: PlayOneShot
-          m_Mode: 2
+        - m_Target: {fileID: 1489724196}
+          m_MethodName: PlayerDialogue
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092,
-              type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -77442,6 +77476,20 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &1489724196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1489724187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 224d444e0c49a1647896adb21f895a01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCSpeak: {fileID: 8300000, guid: 99f74edbea9f2fc46b0a53af726b755b, type: 3}
+  playerSpeak: {fileID: 8300000, guid: 634a93b2dff6cb2449e24b9aa5353092, type: 3}
 --- !u!1 &1520371963
 GameObject:
   m_ObjectHideFlags: 0
