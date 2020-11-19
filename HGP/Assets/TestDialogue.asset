@@ -890,7 +890,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -961,7 +961,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 1
@@ -1032,7 +1032,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1103,7 +1103,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1168,7 +1168,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1240,7 +1240,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 1
@@ -1311,7 +1311,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1382,7 +1382,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 1
@@ -1453,7 +1453,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1518,7 +1518,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 1
@@ -1589,7 +1589,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 1
@@ -1611,8 +1611,8 @@ MonoBehaviour:
         y: 139
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 25.297882}
+    canvasZoom: 0.94000006
   - id: 2
     fields:
     - title: Title
@@ -1781,7 +1781,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1852,7 +1852,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -1920,7 +1920,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 2
@@ -1992,7 +1992,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2063,7 +2063,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 2
@@ -2135,7 +2135,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 2
@@ -2206,7 +2206,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2277,7 +2277,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2348,7 +2348,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2419,7 +2419,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2484,7 +2484,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 2
@@ -2578,8 +2578,8 @@ MonoBehaviour:
         y: 576
         width: 160
         height: 30
-    canvasScrollPosition: {x: 32.96701, y: 149.45049}
-    canvasZoom: 0.9100001
+    canvasScrollPosition: {x: 79.173805, y: 132.12517}
+    canvasZoom: 0.73000026
   - id: 3
     fields:
     - title: Title
@@ -2742,7 +2742,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 3
@@ -2814,7 +2814,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2885,7 +2885,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -2955,7 +2955,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3026,7 +3026,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 3
@@ -3052,7 +3052,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 544
+        x: 541.8723
         y: 151
         width: 160
         height: 30
@@ -3099,7 +3099,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3170,7 +3170,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3235,7 +3235,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 3
@@ -3263,8 +3263,8 @@ MonoBehaviour:
         y: 150
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 65.95746}
+    canvasZoom: 0.94000006
   - id: 4
     fields:
     - title: Title
@@ -3530,7 +3530,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3601,7 +3601,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3666,7 +3666,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 5
@@ -3694,8 +3694,8 @@ MonoBehaviour:
         y: 102
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 23.044659, y: 12.967967}
+    canvasZoom: 1.0899999
   - id: 6
     fields:
     - title: Title
@@ -3858,7 +3858,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -3929,7 +3929,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 6
@@ -4000,7 +4000,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 6
@@ -4065,7 +4065,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 6
@@ -4130,7 +4130,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 6
@@ -4158,8 +4158,8 @@ MonoBehaviour:
         y: 111.067955
         width: 160
         height: 30
-    canvasScrollPosition: {x: 3.0582464, y: 1.2232984}
-    canvasZoom: 1.03
+    canvasScrollPosition: {x: 45.480232, y: 10.811598}
+    canvasZoom: 0.85000014
   - id: 7
     fields:
     - title: Title
@@ -4316,7 +4316,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 7
@@ -4496,7 +4496,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4567,7 +4567,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4591,8 +4591,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 55
-        y: 251
+        x: 57
+        y: 252
         width: 160
         height: 30
     - id: 3
@@ -4638,7 +4638,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4703,7 +4703,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 8
@@ -4727,7 +4727,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 132
         width: 160
         height: 30
@@ -4889,6 +4889,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
         value: 
         type: 0
         typeString: 
@@ -4960,7 +4964,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 9
@@ -5031,7 +5035,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5099,7 +5103,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 9
@@ -5170,7 +5174,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 9
@@ -5241,7 +5245,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 9
@@ -5441,6 +5445,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+        value: Audio(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
         value: 
         type: 0
         typeString: 
@@ -5483,12 +5491,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 196
+        x: 197.21951
         y: 111
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 18.738028, y: 13.67702}
+    canvasZoom: 0.8200002
   - id: 10
     fields:
     - title: Title
@@ -5645,7 +5653,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 10
@@ -5825,7 +5833,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -5896,7 +5904,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -5961,7 +5969,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/ui_menu_popup_01);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 11
@@ -6165,7 +6173,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 12
@@ -6183,7 +6191,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 453
+        x: 454.4286
         y: 145
         width: 160
         height: 30
@@ -6230,7 +6238,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 12
@@ -6295,7 +6303,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 12
@@ -6314,7 +6322,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 234
-        y: 153
+        y: 151.57144
         width: 160
         height: 30
     - id: 4
@@ -6360,7 +6368,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Clothing Rack/foley_cloth_light_fast_movement_15);Delay({{end}});
         type: 0
         typeString: 
       conversationID: 12
@@ -6552,7 +6560,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 13
@@ -6617,7 +6625,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 13
@@ -6682,7 +6690,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 13
@@ -6874,7 +6882,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 14
@@ -6939,7 +6947,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 14
@@ -7004,7 +7012,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 14
@@ -7196,7 +7204,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 15
@@ -7261,7 +7269,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 15
@@ -7326,7 +7334,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 15
@@ -7506,7 +7514,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
         type: 0
         typeString: 
       conversationID: 16
@@ -7571,7 +7579,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Pop Ups/FrightNight_Interaction_Tree);
+          Delay({{end}});
         type: 0
         typeString: 
       conversationID: 16
