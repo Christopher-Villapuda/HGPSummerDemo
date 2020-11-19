@@ -26,7 +26,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float sightRadius = 10;
 
-    void Start()
+    void Awake()
     {
         //targetVector = target.position;
         //enemy = transform.position;
@@ -34,10 +34,10 @@ public class EnemyAI : MonoBehaviour
         //targetVector = target.position;
         avoiding = false;
     }
-    void Update()
+    void FixedUpdate()
     {
         //Sets up the distance moved this frame.
-        float step = walkSpeed * Time.deltaTime;
+        float step = runSpeed * Time.deltaTime;
 
         //Casts a ray towards the player.
         RaycastHit2D hit = Physics2D.Raycast(transform.position, ((Vector2)target.position - (Vector2)transform.position),sightRadius);
@@ -55,8 +55,8 @@ public class EnemyAI : MonoBehaviour
         }
         else
         {
-            step = walkSpeed * Time.deltaTime;
-            targetVector = transform.up + transform.position;
+            //step = walkSpeed * Time.deltaTime;
+            targetVector = transform.position;
         }
 
         horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);
