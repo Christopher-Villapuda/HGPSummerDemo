@@ -24,11 +24,13 @@ public class PlayerHide : MonoBehaviour
     private Rigidbody2D rBD2D;
     private BoxCollider2D bC2D;
     private BoxCollider2D collidingWith;
+    private PlayerController pC;
 
     void Awake()
     {
         rBD2D = GetComponent<Rigidbody2D>();
         bC2D = GetComponent<BoxCollider2D>();
+        pC = GetComponent<PlayerController>();
         rBD2D.useFullKinematicContacts = true;
         colliding = false;
     }
@@ -52,6 +54,7 @@ public class PlayerHide : MonoBehaviour
                 {
                     leavingHiding = false;
                     rBD2D.isKinematic = false;
+                    pC.Hidden = false;
                 }
             }
         }
@@ -80,8 +83,9 @@ public class PlayerHide : MonoBehaviour
                         else
                         {
                             hiding = true;
+                            pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
-                            newYpos = collidingWith.gameObject.transform.position.y;
+                            newYpos = collidingWith.gameObject.transform.position.y + 0.01f;
                             originalXpos = transform.position.x;
                             originalYpos = transform.position.y;
                             rBD2D.isKinematic = true;
