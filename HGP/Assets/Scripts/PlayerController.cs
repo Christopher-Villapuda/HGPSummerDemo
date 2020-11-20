@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     //    [SerializeField]
     //    private AnimatorController playerMovingLeft;
     //    [SerializeField]
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     //    private AnimatorController playerUpIdle;
     //    [SerializeField]
     //    private AnimatorController playerDownIdle;
+
 
     private float horizontalInput;
     private float verticalInput;
@@ -198,6 +200,7 @@ public class PlayerController : MonoBehaviour
         //    }
         //}
 
+
         //var hAbsolute = Mathf.Abs(xSpeed);
         //var vAbsolute = Mathf.Abs(ySpeed);
         //var difference = hAbsolute - vAbsolute;
@@ -239,8 +242,10 @@ public class PlayerController : MonoBehaviour
         //    //}
         //}
 
+
         //rBD2D.MovePosition(rBD2D.position + velocity);
     }
+
 
     //private void SetNoMovingAnimBool()
     //{
@@ -278,4 +283,5 @@ public class PlayerController : MonoBehaviour
     //    playerAnimator.SetBool("MovingUp", false);
     //    playerAnimator.SetBool("MovingDown", true);
     //}
+
 }

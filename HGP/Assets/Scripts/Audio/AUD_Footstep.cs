@@ -36,15 +36,18 @@ public class AUD_Footstep : MonoBehaviour
 
     void footstep()
     {
-        //Selects what audio clip to use.
-        source.clip = step[Random.Range(0, step.Length)];
-        //Sets Volume
-        Volume = Random.Range(minVolume, maxVolume);
-        source.volume = Volume;
-        //Sets Pitch
-        pitch = Random.Range(minPitch, maxPitch);
-        source.pitch = pitch;
-        //Play
-        source.Play();
+        if (!source.isPlaying)
+        {
+            //Selects what audio clip to use.
+            source.clip = step[Random.Range(0, step.Length)];
+            //Sets Volume
+            Volume = Random.Range(minVolume, maxVolume);
+            source.volume = Volume;
+            //Sets Pitch
+            pitch = Random.Range(minPitch, maxPitch);
+            source.pitch = pitch;
+            //Play
+            source.Play();
+        }
     }
 }
