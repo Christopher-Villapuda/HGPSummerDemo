@@ -71385,7 +71385,7 @@ GameObject:
   - component: {fileID: 607967332}
   m_Layer: 0
   m_Name: Circular_rack (3)
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79191,6 +79191,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5056646922109944832, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: useDefaultGUI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056646922109944832, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: guiSkin
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5056646922109944833, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: m_Offset.y
@@ -79666,6 +79676,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58ac37417e60e534f91138088a3e6f70, type: 3}
+--- !u!1 &1795139824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 125850, guid: 58ac37417e60e534f91138088a3e6f70,
+    type: 3}
+  m_PrefabInstance: {fileID: 1795139823}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1795139825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795139824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 3840, y: 2180}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
 --- !u!1 &1819210690
 GameObject:
   m_ObjectHideFlags: 0
