@@ -9,6 +9,8 @@ public class DarknessFade : MonoBehaviour
     private float fadeGoal;
     private Color color;
     private float fadeSpeed = 0.01f;
+    [SerializeField]
+    private PlayerController childStamina;
     void Start()
     {
         image = GetComponent<Image>();
@@ -21,30 +23,32 @@ public class DarknessFade : MonoBehaviour
     void FixedUpdate()
     {
         color = image.color;
-        if (color.a < fadeGoal)
-        {
-            color.a += fadeSpeed;
-        }
-        else if (color.a > fadeGoal)
-        {
-            color.a -= fadeSpeed;
-        }
+        //if (color.a < fadeGoal)
+        //{
+        //    color.a += fadeSpeed;
+        //}
+        //else if (color.a > fadeGoal)
+        //{
+        //    color.a -= fadeSpeed;
+        //}
+        var exhaustion = 1.0f - childStamina.Stamina / childStamina.MaxStamina;
+        color.a = exhaustion;
         color.a = Mathf.Round(color.a * 100f) / 100f;
         image.color = color;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown("k"))
-        {
-            if (fadeGoal == 1)
-            {
-                fadeGoal = 0;
-            }
-            else if (fadeGoal == 0)
-            {
-                fadeGoal = 1;
-            }
-        }
+        //if (Input.GetKeyDown("k"))
+        //{
+        //    if (fadeGoal == 1)
+        //    {
+        //        fadeGoal = 0;
+        //    }
+        //    else if (fadeGoal == 0)
+        //    {
+        //        fadeGoal = 1;
+        //    }
+        //}
     }
 }
