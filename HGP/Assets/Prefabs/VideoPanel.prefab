@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4831777734468851264}
   - component: {fileID: 4831777734468851265}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: VideoPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 8400000, guid: 9fa2d8ea129220a4492bf24b1ea71a55, type: 2}
+  m_Texture: {fileID: 8400000, guid: 6bc602bee986e1f41afa21acecddb329, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -81,11 +81,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4831777734468851268}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d9aefb2635238b148917bdafb740fd63, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 8a4f965afc479fd44bec7e6f5c739d7c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8400000, guid: 9fa2d8ea129220a4492bf24b1ea71a55, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: 6bc602bee986e1f41afa21acecddb329, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex

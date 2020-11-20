@@ -72,7 +72,7 @@ public class PlayerHide : MonoBehaviour
         //{
         //    hideAction = true;
         //}
-        if (colliding)
+        if (colliding && collidingWith != null)
         {
             if (bC2D.IsTouching(collidingWith))
             {
@@ -102,7 +102,7 @@ public class PlayerHide : MonoBehaviour
                 }
             }
         }
-        Debug.Log("colliding");
+        //Debug.Log("colliding");
     }
 
     void OnCollisionStay2D(Collision2D col)
@@ -135,12 +135,12 @@ public class PlayerHide : MonoBehaviour
     {
         colliding = true;
         collidingWith = col.gameObject.GetComponent<BoxCollider2D>();
-        Debug.Log("enter");
+        //Debug.Log("enter");
     }
 
     void OnCollisionExit2D(Collision2D col)
     {
         colliding = false;
-        Debug.Log("exit");
+        //Debug.Log("exit");
     }
 }

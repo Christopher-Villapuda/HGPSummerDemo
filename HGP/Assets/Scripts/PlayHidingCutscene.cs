@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayHidingCutscene : MonoBehaviour
 {
@@ -17,9 +18,10 @@ public class PlayHidingCutscene : MonoBehaviour
 
     void EndReached(VideoPlayer vp)
     {
-        Color color = rawImage.color;
-        color.a = 0;
-        rawImage.color = color;
+        //Color color = rawImage.color;
+        //color.a = 0;
+        //rawImage.color = color;
+        SceneManager.LoadScene("ClothingStore");
     }
 
     //public GameObject thePlayer;
