@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
     //    [SerializeField]
     //    private AnimatorController playerMovingLeft;
     //    [SerializeField]
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     //    private AnimatorController playerUpIdle;
     //    [SerializeField]
     //    private AnimatorController playerDownIdle;
+
 
     private float horizontalInput;
     private float verticalInput;
@@ -124,11 +126,19 @@ public class PlayerController : MonoBehaviour
         position.x = position.x + speed * horizontalInput * Time.deltaTime * sprintSpeed;
         position.y = position.y + speed * verticalInput * Time.deltaTime * sprintSpeed;
 
+        rBD2D.MovePosition(position);
+
         xSpeed = transform.position.x - prevX;
         ySpeed = transform.position.y - prevY;
 
         prevX = transform.position.x;
         prevY = transform.position.y;
+
+        Vector2 magnitude = new Vector2(xSpeed, ySpeed);
+
+        playerAnimator.SetFloat("Horizontal", xSpeed);
+        playerAnimator.SetFloat("Vertical", ySpeed);
+        playerAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
 
         //xSpeed = speed * horizontalInput * Time.deltaTime;
         //ySpeed = speed * verticalInput * Time.deltaTime;
@@ -188,17 +198,18 @@ public class PlayerController : MonoBehaviour
         //    }
         //}
 
-        var hAbsolute = Mathf.Abs(xSpeed);
-        var vAbsolute = Mathf.Abs(ySpeed);
-        var difference = hAbsolute - vAbsolute;
-        var absoluteDifference = Mathf.Abs(difference);
 
-        playerAnimator.SetFloat("X Speed", xSpeed);
-        playerAnimator.SetFloat("Y Speed", ySpeed);
-        playerAnimator.SetFloat("Horizontal Absolute Value", hAbsolute);
-        playerAnimator.SetFloat("Vertical Absolute Value", vAbsolute);
-        playerAnimator.SetFloat("Difference", difference);
-        playerAnimator.SetFloat("Absolute Value Difference", absoluteDifference);
+        //var hAbsolute = Mathf.Abs(xSpeed);
+        //var vAbsolute = Mathf.Abs(ySpeed);
+        //var difference = hAbsolute - vAbsolute;
+        //var absoluteDifference = Mathf.Abs(difference);
+
+        //playerAnimator.SetFloat("X Speed", xSpeed);
+        //playerAnimator.SetFloat("Y Speed", ySpeed);
+        //playerAnimator.SetFloat("Horizontal Absolute Value", hAbsolute);
+        //playerAnimator.SetFloat("Vertical Absolute Value", vAbsolute);
+        //playerAnimator.SetFloat("Difference", difference);
+        //playerAnimator.SetFloat("Absolute Value Difference", absoluteDifference);
         //Debug.Log(absoluteDifference);
 
         //if (absoluteDifference < 0.001)
@@ -229,9 +240,10 @@ public class PlayerController : MonoBehaviour
         //    //}
         //}
 
+
         //rBD2D.MovePosition(rBD2D.position + velocity);
-        rBD2D.MovePosition(position);
     }
+
 
     //private void SetNoMovingAnimBool()
     //{
@@ -269,4 +281,5 @@ public class PlayerController : MonoBehaviour
     //    playerAnimator.SetBool("MovingUp", false);
     //    playerAnimator.SetBool("MovingDown", true);
     //}
+
 }
