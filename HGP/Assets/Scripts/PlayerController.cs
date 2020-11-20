@@ -40,10 +40,7 @@ public class PlayerController : MonoBehaviour
     private float maxStamina = 5;
     public float MaxStamina
     {
-        get
-        {
-            return maxStamina;
-        }
+        get {return maxStamina;}
     }
     [SerializeField]
     private float staminaDrain = 0.1f;
@@ -52,10 +49,7 @@ public class PlayerController : MonoBehaviour
     private float stamina;
     public float Stamina
     {
-        get
-        {
-            return stamina;
-        }
+        get {return stamina;}
     }
     private bool exhausted = false;
     private Vector2 velocity;
@@ -64,6 +58,12 @@ public class PlayerController : MonoBehaviour
     private float ySpeed;
     private float prevX;
     private float prevY;
+    private bool hidden = false;
+    public bool Hidden
+    {
+        get {return hidden;}
+        set { hidden = value; }
+    }
 
     private Animator playerAnimator;
 
@@ -123,8 +123,10 @@ public class PlayerController : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        position.x = position.x + speed * horizontalInput * Time.deltaTime * sprintSpeed;
-        position.y = position.y + speed * verticalInput * Time.deltaTime * sprintSpeed;
+        var hidingStopper = hidden ? 0 : 1;
+
+        position.x = position.x + speed * horizontalInput * Time.deltaTime * sprintSpeed * hidingStopper;
+        position.y = position.y + speed * verticalInput * Time.deltaTime * sprintSpeed * hidingStopper;
 
         rBD2D.MovePosition(position);
 
