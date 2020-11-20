@@ -20,17 +20,21 @@ public class PlayerHide : MonoBehaviour
     private bool leavingHiding = false;
     [SerializeField]
     private float hideSpeed = 15;
+
     private bool colliding;
     private Rigidbody2D rBD2D;
     private BoxCollider2D bC2D;
     private BoxCollider2D collidingWith;
 
+
     void Awake()
     {
         rBD2D = GetComponent<Rigidbody2D>();
+
         bC2D = GetComponent<BoxCollider2D>();
         rBD2D.useFullKinematicContacts = true;
         colliding = false;
+
     }
 
     void FixedUpdate()
@@ -40,6 +44,7 @@ public class PlayerHide : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(newXpos, newYpos), step);
             //rBD2D.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(newXpos,newYpos),step));
+
         }
         else
         {
@@ -70,6 +75,7 @@ public class PlayerHide : MonoBehaviour
             {
                 if (Input.GetKeyDown("space"))
                 {
+
                     if (collidingWith.gameObject.tag == "Prop")
                     {
                         if (hiding)
@@ -88,9 +94,11 @@ public class PlayerHide : MonoBehaviour
                         }
                     }
                     //hideAction = false;
+
                 }
             }
         }
+        Debug.Log("colliding");
     }
 
     void OnCollisionStay2D(Collision2D col)
