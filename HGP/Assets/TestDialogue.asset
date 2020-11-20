@@ -928,7 +928,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Welcome to Always 25 How may I assist you...
+        value: Welcome to Hills Clothing, how may I assist you...
         type: 0
         typeString: 
       - title: Parenthetical
@@ -4342,11 +4342,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 1
+        value: 7
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 7
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
