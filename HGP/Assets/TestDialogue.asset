@@ -2416,7 +2416,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Would the mother of their lost child return to the Always 25 store.
+        value: Would the mother of their lost child return to the Hills clothing
+          store.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3179,7 +3180,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Sure you don't. I bet you're just trying to sneak out and see Santa.
+        value: Sure you can't. I bet you're just trying to sneak out and see Santa.
         type: 0
         typeString: 
       - title: Parenthetical
