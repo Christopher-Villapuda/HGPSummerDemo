@@ -196,7 +196,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30068146}
   m_CullTransparentMesh: 0
-
 --- !u!1 &61849223
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +226,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.558
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -338,9 +337,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1 &465042213
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,9 +430,7 @@ GameObject:
   - component: {fileID: 552317813}
   - component: {fileID: 552317812}
   - component: {fileID: 552317811}
-
   - component: {fileID: 552317814}
-
   m_Layer: 5
   m_Name: 'Quit_Btn '
   m_TagString: Untagged
@@ -516,19 +512,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-
-      - m_Target: {fileID: 61849225}
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-
 --- !u!114 &552317812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +549,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552317809}
   m_CullTransparentMesh: 0
-
 --- !u!114 &552317814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -595,7 +577,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-
 --- !u!1 &563891677
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,9 +589,7 @@ GameObject:
   - component: {fileID: 563891681}
   - component: {fileID: 563891680}
   - component: {fileID: 563891679}
-
   - component: {fileID: 563891682}
-
   m_Layer: 5
   m_Name: 'Play_Btn '
   m_TagString: Untagged
@@ -692,19 +671,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-
-      - m_Target: {fileID: 61849225}
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-
 --- !u!114 &563891680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,7 +708,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563891677}
   m_CullTransparentMesh: 0
-
 --- !u!114 &563891682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,7 +736,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-
 --- !u!1 &583398280
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,9 +748,7 @@ GameObject:
   - component: {fileID: 583398284}
   - component: {fileID: 583398283}
   - component: {fileID: 583398282}
-
   - component: {fileID: 583398285}
-
   m_Layer: 5
   m_Name: 'Credits_Btn '
   m_TagString: Untagged
@@ -868,19 +830,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-
-      - m_Target: {fileID: 61849225}
-        m_MethodName: Click
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-
 --- !u!114 &583398283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,7 +867,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583398280}
   m_CullTransparentMesh: 0
-
 --- !u!114 &583398285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,7 +895,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-
 --- !u!1 &583983727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1172,9 +1119,7 @@ RectTransform:
   - {fileID: 2128918172}
   - {fileID: 465042214}
   m_Father: {fileID: 0}
-
-  m_RootOrder: 2
-
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1635,8 +1580,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1057011568
 PrefabInstance:
@@ -1653,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 764414572192000965, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: m_Volume
-      value: 0.575
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
@@ -1722,7 +1666,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e73d889014b42043bc12528b06d46a4, type: 3}
-
 --- !u!1 &1119195299
 GameObject:
   m_ObjectHideFlags: 0

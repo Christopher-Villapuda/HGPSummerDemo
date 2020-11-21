@@ -832,7 +832,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -71183,6 +71183,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8697157824809882726, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.225
+      objectReference: {fileID: 0}
     - target: {fileID: 8697157824809882727, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: volume
@@ -71420,6 +71425,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BackgroundMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 764414572192000965, guid: 4e73d889014b42043bc12528b06d46a4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
