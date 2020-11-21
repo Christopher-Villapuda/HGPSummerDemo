@@ -831,7 +831,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1543,7 +1543,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.44, y: 2.2736263}
+  m_Size: {x: 1.44, y: 2.75}
   m_EdgeRadius: 0
 --- !u!114 &142228910
 MonoBehaviour:
@@ -12680,7 +12680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307890515}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.912735, y: -37.13315, z: 1578.3354}
+  m_LocalPosition: {x: 0.96, y: -36.63, z: 1578.3354}
   m_LocalScale: {x: 2.6, y: 2.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1276476161}
@@ -12699,7 +12699,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0115863085, y: -0.29050285}
+  m_Offset: {x: 0.07, y: -0.48}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -12710,7 +12710,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7071701, y: 1.1689943}
+  m_Size: {x: 0.7071701, y: 1.2550406}
   m_EdgeRadius: 0
 --- !u!114 &307890519
 MonoBehaviour:
@@ -71852,6 +71852,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8697157824809882726, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8697157824809882727, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: volume
@@ -72170,10 +72175,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackgroundMusic
       objectReference: {fileID: 0}
+    - target: {fileID: 764414572192000965, guid: 4e73d889014b42043bc12528b06d46a4,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: volume
-      value: 0.5
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
@@ -74354,7 +74364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044934186}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7999992, y: -15.309999, z: 0}
+  m_LocalPosition: {x: -3.9299994, y: -14.290001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953315274}
@@ -76115,7 +76125,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.022498608, y: 0}
+  m_Offset: {x: 0.07, y: -0.04615435}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -76126,7 +76136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.73754084, y: 1.75}
+  m_Size: {x: 0.73754084, y: 1.8423088}
   m_EdgeRadius: 0
 --- !u!1 &1236286429
 GameObject:
@@ -76959,9 +76969,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1560997433
+  m_SortingLayer: 8
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 281e169009a37674b969cb0efa5c502a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -76981,7 +76991,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418578115}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.43, y: -50.06315, z: 1578.3354}
+  m_LocalPosition: {x: 64.25, y: -47.9, z: 1578.3354}
   m_LocalScale: {x: 2.6, y: 2.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1276476161}
@@ -79338,8 +79348,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1173865939
-  m_SortingLayer: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b795191827d9cbd44b059d70eb6ac806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -79360,7 +79370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638526302}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.9, y: -15.309999, z: 0}
+  m_LocalPosition: {x: -13.03, y: -14.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1953315274}
@@ -80188,7 +80198,7 @@ PrefabInstance:
     - target: {fileID: 7134974767945852990, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: sprint
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7134974767945852990, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
@@ -81330,7 +81340,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2679558, y: 1.85}
+  m_Size: {x: 3.69, y: 1.85}
   m_EdgeRadius: 0
 --- !u!82 &1905108664
 AudioSource:
