@@ -2640,7 +2640,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: Fade(out#000000)
+        value: 'Fade(out#000000);
+
+          LoadLevel(Chris_Main_Menu)'
         type: 0
         typeString: 
       conversationID: 2
@@ -4959,81 +4961,6 @@ MonoBehaviour:
         y: 43
         width: 160
         height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 9
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: Looks Good
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
-        type: 0
-        typeString: 
-      - title: Response Menu Sequence
-        value: 
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 1
-        destinationConversationID: 9
-        destinationDialogueID: 2
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 75
-        y: 198
-        width: 160
-        height: 30
     - id: 2
       fields:
       - title: Title
@@ -5171,77 +5098,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 75
         y: 297
-        width: 160
-        height: 30
-    - id: 4
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 9
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: Uhh...
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: AudioWait(Audio/Fright Night/Dialogue/Dialogue Select/ui_button_simple_click_05)
-        type: 0
-        typeString: 
-      conversationID: 9
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 9
-        originDialogueID: 4
-        destinationConversationID: 9
-        destinationDialogueID: 5
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 258
-        y: 205
         width: 160
         height: 30
     - id: 5
@@ -5576,13 +5432,13 @@ MonoBehaviour:
       - originConversationID: 9
         originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 1
+        destinationDialogueID: 5
         isConnector: 0
         priority: 2
       - originConversationID: 9
         originDialogueID: 9
         destinationConversationID: 9
-        destinationDialogueID: 4
+        destinationDialogueID: 2
         isConnector: 0
         priority: 2
       conditionsString: Variable["Talked_to_Fashionista"] == false
@@ -5596,8 +5452,8 @@ MonoBehaviour:
         y: 114.65854
         width: 160
         height: 30
-    canvasScrollPosition: {x: 18.738028, y: 13.67702}
-    canvasZoom: 0.8200002
+    canvasScrollPosition: {x: 22.096642, y: 0}
+    canvasZoom: 1.15
   - id: 10
     fields:
     - title: Title
@@ -10133,7 +9989,7 @@ MonoBehaviour:
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
-      value: 2
+      value: -1
       type: 5
       typeString: CustomFieldType_Actor
     overrideSettings:
@@ -10175,7 +10031,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -10242,7 +10098,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: -1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
