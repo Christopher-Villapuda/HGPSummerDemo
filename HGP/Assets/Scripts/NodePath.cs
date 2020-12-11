@@ -12,23 +12,31 @@ public class NodePath : MonoBehaviour
     [SerializeField]
     int waitTime = 3;
     bool waiting = false;
+    private bool pathing = true;
+    public bool Pathing
+    {
+        get{return pathing;}
+        set {pathing = value;}
+    }
 
     void FixedUpdate()
     {
         float step = speed * Time.deltaTime;
         transform.position = Vector2.MoveTowards(transform.position, nodes[nodeCount].transform.position, step);
-
-        if ((Vector2)transform.position == (Vector2)nodes[nodeCount].transform.position)
+        if (pathing)
         {
-            if (nodeCount + 1 == nodes.Count)
+            if ((Vector2)transform.position == (Vector2)nodes[nodeCount].transform.position)
             {
-                nodeCount = 0;
-            }
-            else
-            {
-                if (!waiting)
+                if (nodeCount + 1 == nodes.Count)
                 {
-                    StartCoroutine("WaitTime");
+                    nodeCount = 0;
+                }
+                else
+                {
+                    if (!waiting)
+                    {
+                        StartCoroutine("WaitTime");
+                    }
                 }
             }
         }

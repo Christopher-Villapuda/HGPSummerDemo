@@ -7,10 +7,7 @@ public class PlayerHide : MonoBehaviour
     private bool hiding = false;
     public bool Hiding
     {
-        get
-        {
-            return hiding;
-        }
+        get{return hiding;}
     }
     private float originalXpos;
     private float originalYpos;

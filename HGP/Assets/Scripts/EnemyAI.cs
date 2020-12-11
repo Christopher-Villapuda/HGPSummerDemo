@@ -25,6 +25,7 @@ public class EnemyAI : MonoBehaviour
     private bool avoiding;
     [SerializeField]
     private float sightRadius = 10;
+    private NodePath nodePath;
 
     void Awake()
     {
@@ -33,6 +34,7 @@ public class EnemyAI : MonoBehaviour
         rBD2D = GetComponent<Rigidbody2D>();
         //targetVector = target.position;
         avoiding = false;
+        nodePath = GetComponent<NodePath>();
     }
     void FixedUpdate()
     {
@@ -46,7 +48,8 @@ public class EnemyAI : MonoBehaviour
         //If the cast ray hits the player, the position the enemy is moving towards updates.
         if (hit && hit.collider.gameObject.tag == "Player")
         {
-                PlayerHide playerHide = hit.collider.gameObject.GetComponent<PlayerHide>();
+            nodePath.Pathing = false;
+            PlayerHide playerHide = hit.collider.gameObject.GetComponent<PlayerHide>();
                 if (!playerHide.Hiding)
                 {
                     step = runSpeed * Time.deltaTime;
@@ -57,6 +60,7 @@ public class EnemyAI : MonoBehaviour
         {
             //step = walkSpeed * Time.deltaTime;
             targetVector = transform.position;
+            nodePath.Pathing = true;
         }
 
         horizontalDirection = Mathf.Sign(targetVector.x - transform.position.x);

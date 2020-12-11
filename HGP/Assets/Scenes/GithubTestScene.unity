@@ -764,10 +764,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056646922109944839, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5056646922109946873, guid: 4e439e07c3e9df74fa1584a269676f0f,
         type: 3}
       propertyPath: m_Name
       value: Child_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134974767945852990, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: sprint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134974767945852990, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: maxStamina
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134974767945852990, guid: 4e439e07c3e9df74fa1584a269676f0f,
+        type: 3}
+      propertyPath: staminaEnergyPercentage
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e439e07c3e9df74fa1584a269676f0f, type: 3}
@@ -1299,7 +1329,7 @@ PrefabInstance:
     - target: {fileID: 2771092000691579694, guid: 86b8411dd65d87a45835bddbe8f37d23,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -43.753906
+      value: -44
       objectReference: {fileID: 0}
     - target: {fileID: 2771092000691579694, guid: 86b8411dd65d87a45835bddbe8f37d23,
         type: 3}
@@ -2400,6 +2430,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4831777734468851268, guid: 18962ef06984b8443b272fab3ce93b8b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4831777734468851269, guid: 18962ef06984b8443b272fab3ce93b8b,
         type: 3}
