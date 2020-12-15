@@ -999,7 +999,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 81
+        y: 79.93617
         width: 160
         height: 30
     - id: 2
@@ -1695,14 +1695,14 @@ MonoBehaviour:
         y: 139
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 25.297882}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.94000006
   - id: 2
     fields:
     - title: Title
       value: Cashier 2
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -1710,7 +1710,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1958,7 +1958,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 250
-        y: 278
+        y: 276.82355
         width: 160
         height: 30
     - id: 3
@@ -2523,7 +2523,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 40
-        y: 176
+        y: 173.64706
         width: 160
         height: 30
     - id: 12
@@ -2661,12 +2661,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 461
+        x: 462.17645
         y: 576
         width: 160
         height: 30
-    canvasScrollPosition: {x: 72.60272, y: 301.3698}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.85000014
   - id: 3
     fields:
     - title: Title
