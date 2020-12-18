@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour
         get {return hidden;}
         set { hidden = value; }
     }
-
     private Animator playerAnimator;
 
     void Awake()
