@@ -102,7 +102,6 @@ public class EnemyAI : MonoBehaviour
         enemyAnimator.SetFloat("HorizontalMovement", xSpeed);
         enemyAnimator.SetFloat("VerticalMovement", ySpeed);
         enemyAnimator.SetFloat("Speed", magnitude.sqrMagnitude);
-        Debug.Log(xSpeed + " " + ySpeed);
     }
 
     void OnCollisionStay2D(Collision2D other)

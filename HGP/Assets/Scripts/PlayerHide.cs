@@ -145,10 +145,11 @@ public class PlayerHide : MonoBehaviour
     void SetHiding(string prop)
     {
         hiding = true;
-        var Prop = GameObject.Find("front_rack (1)");
+        var Prop = GameObject.Find(prop);
         newXpos = Prop.gameObject.transform.position.x;
         newYpos = Prop.gameObject.transform.position.y + 0.01f;
-        originalXpos = -24.5f;
+        originalXpos = Prop.gameObject.transform.position.x+4;
         originalYpos = Prop.gameObject.transform.position.y;
+        collidingWith = Prop.gameObject.GetComponent<BoxCollider2D>();
     }
 }

@@ -59,7 +59,7 @@ MonoBehaviour:
   - id: 2
     fields:
     - title: Name
-      value: Cashier 1
+      value: Rude Cashier
       type: 0
       typeString: 
     - title: Pictures
@@ -81,7 +81,7 @@ MonoBehaviour:
   - id: 3
     fields:
     - title: Name
-      value: Cashier 2
+      value: Nice Cashier
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -103,7 +103,7 @@ MonoBehaviour:
   - id: 4
     fields:
     - title: Name
-      value: Mowhawk Man
+      value: Security Guard
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -534,7 +534,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 2
-      value: Search near entrance
+      value: Search racks near entrance
       type: 0
       typeString: 
     - title: Entry 3 State
@@ -542,7 +542,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 3
-      value: Search checkout area
+      value: Search racks near checkout area
       type: 0
       typeString: 
     - title: Entry 4
@@ -554,7 +554,7 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Entry 5
-      value: Search near Christmas tree
+      value: Search racks near Christmas tree
       type: 0
       typeString: 
     - title: Entry 5 State
@@ -570,7 +570,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_QuestState
     - title: Entry 6
-      value: Return to Mowhawk Man
+      value: Return to Security Guard
       type: 0
       typeString: 
     - title: Entry 6 State
@@ -624,7 +624,7 @@ MonoBehaviour:
       type: 1
       typeString: CustomFieldType_Number
     - title: Entry 1 State
-      value: active
+      value: unassigned
       type: 0
       typeString: 
     - title: Entry 1
@@ -795,6 +795,20 @@ MonoBehaviour:
     fields:
     - title: Name
       value: Polkadots
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 14
+    fields:
+    - title: Name
+      value: CheckedRoom
       type: 0
       typeString: 
     - title: Initial Value
@@ -1269,8 +1283,8 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Talked_to_Door_Guard"] == true and (CurrentQuestEntryState("Leave
-        Store", 7) == "active")
+      conditionsString: Variable["Talked_to_Door_Guard"] == true and (Variable["Cashier_Annoyed"]
+        == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1308,7 +1322,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: No, but there is a guy that's block-
+        value: No, but there is a man that's block-
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1657,7 +1671,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I'm calling security.
+        value: If you don't leave me alone I'll call security.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -1946,7 +1960,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 2
+        destinationConversationID: 2
+        destinationDialogueID: 33
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 'SetQuestState("Find shirt", "active");
 
@@ -2274,7 +2294,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Sounds like your mom is missing hold on.
+        value: 'I see. I''ll need to call the code. '
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2304,7 +2324,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 7
         destinationConversationID: 2
-        destinationDialogueID: 8
+        destinationDialogueID: 25
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2315,7 +2335,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 460
-        y: 426
+        y: 438.65826
         width: 160
         height: 30
     - id: 8
@@ -2345,7 +2365,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Attention shoppers '
+        value: Adam you have a call at the cash wrap.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2385,8 +2405,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460
-        y: 476
+        x: 459.9671
+        y: 540.52405
         width: 160
         height: 30
     - id: 9
@@ -2416,8 +2436,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Would the mother of their lost child return to the Hills clothing
-          store.
+        value: Adam to the cash wrap.
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2447,7 +2466,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 9
         destinationConversationID: 2
-        destinationDialogueID: 21
+        destinationDialogueID: 29
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2457,8 +2476,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 461
-        y: 524.8235
+        x: 460.3177
+        y: 600.38654
         width: 160
         height: 30
     - id: 11
@@ -2598,7 +2617,78 @@ MonoBehaviour:
         y: 144
         width: 160
         height: 30
-    - id: 21
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Wait here.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 25
+        destinationConversationID: 2
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 460
+        y: 488.65826
+        width: 160
+        height: 30
+    - id: 29
       fields:
       - title: Title
         value: 
@@ -2641,8 +2731,20 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SwitchCamera(Cutaway 1_1);SendMessage(SetHiding,front_rack (1),Child_1);MoveTo(front_rack
-          (1),Child_1);SendMessage(ActivateEnemy,true,SecurityGuard);Delay(2.5)
+        value: 'SwitchCamera(Cutaway 1_1);
+
+          SendMessage(SetHiding,front_rack
+          (1),Child_1);
+
+          MoveTo(front_rack (1),Child_1,0.1);
+
+          SendMessage(ActivateEnemy,true,SecurityGuard);
+
+          SetActive(Exit,true);
+
+          SetActive(GameOverBox,true);
+
+          Delay(2.5)'
         type: 0
         typeString: 
       conversationID: 2
@@ -2654,9 +2756,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 2
-        originDialogueID: 21
+        originDialogueID: 29
         destinationConversationID: 2
-        destinationDialogueID: 22
+        destinationDialogueID: 30
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2666,11 +2768,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 460.6003
-        y: 578.512
+        x: 463.84424
+        y: 674.1427
         width: 160
         height: 30
-    - id: 22
+    - id: 30
       fields:
       - title: Title
         value: 
@@ -2725,9 +2827,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 2
-        originDialogueID: 22
+        originDialogueID: 30
         destinationConversationID: 2
-        destinationDialogueID: 23
+        destinationDialogueID: 31
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2737,11 +2839,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 462.04227
-        y: 634.76935
+        x: 465.0843
+        y: 727.17957
         width: 160
         height: 30
-    - id: 23
+    - id: 31
       fields:
       - title: Title
         value: 
@@ -2768,7 +2870,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Where'd they go?
+        value: Wait...where'd they go?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -2796,9 +2898,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks:
       - originConversationID: 2
-        originDialogueID: 23
+        originDialogueID: 31
         destinationConversationID: 2
-        destinationDialogueID: 24
+        destinationDialogueID: 32
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2808,11 +2910,11 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 462.04227
-        y: 685.8003
+        x: 465.0843
+        y: 778.2105
         width: 160
         height: 30
-    - id: 24
+    - id: 32
       fields:
       - title: Title
         value: New Dialogue Entry
@@ -2873,16 +2975,81 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 462.04227
-        y: 735.8003
+        x: 465.0843
+        y: 828.2105
         width: 160
         height: 30
-    canvasScrollPosition: {x: 60.144943, y: 446.7474}
-    canvasZoom: 0.85000026
+    - id: 33
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I think I saw the shirt in one of those racks I checked.
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 250
+        y: 326.82355
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.0000002
   - id: 3
     fields:
     - title: Title
-      value: Mowhawk Man
+      value: Security Guard
       type: 0
       typeString: 
     - title: Pictures
@@ -3102,7 +3269,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Well, duh this is the exit. But I can't just let a little kid wander
+        value: Well, yeah this is the exit. But I can't just let a little kid wander
           around the mall without their parent.
         type: 0
         typeString: 
@@ -3670,7 +3837,220 @@ MonoBehaviour:
       isGroup: 0
       nodeColor: 
       delaySimStatus: 0
-      falseConditionAction: 
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 0
+        destinationConversationID: 4
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Mom.... '
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 1
+        destinationConversationID: 4
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Mom!
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 2
+        destinationConversationID: 4
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 130
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Where are you?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
@@ -3681,7 +4061,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 30
+        y: 180
         width: 160
         height: 30
     canvasScrollPosition: {x: 0, y: 0}
@@ -4652,7 +5032,7 @@ MonoBehaviour:
         y: 142.96907
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 104.1237}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.97000015
   - id: 8
     fields:
@@ -6358,7 +6738,8 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: ' (CurrentQuestEntryState("Leave Store", 1) == "active")'
+      conditionsString: ' (CurrentQuestEntryState("Leave Store", 1) == "active")
+        and (Variable["CheckedRack1"] == false)'
       userScript: 'Variable["CheckedRack1"] = true;
 
         SetQuestEntryState("Leave
@@ -6891,11 +7272,12 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
-      userScript: 'Variable["CheckedRack2"] = true;
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active" and
+        (Variable["CheckedRoom"] == false)
+      userScript: 'SetQuestEntryState("Leave Store", 5, "success");
 
-        SetQuestEntryState("Leave
-        Store", 5, "success")'
+        Variable["CheckedRoom"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7618,7 +8000,8 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active"
+      conditionsString: CurrentQuestEntryState("Leave Store", 1) == "active" and
+        (Variable["CheckedRack4"] == false)
       userScript: 'Variable["CheckedRack4"] = true;
 
         SetQuestEntryState("Leave
