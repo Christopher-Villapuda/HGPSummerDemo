@@ -999,7 +999,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 20
-        y: 81
+        y: 79.93617
         width: 160
         height: 30
     - id: 2
@@ -1695,14 +1695,14 @@ MonoBehaviour:
         y: 139
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 25.297882}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.94000006
   - id: 2
     fields:
     - title: Title
       value: Cashier 2
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Pictures
       value: '[]'
       type: 3
@@ -1710,7 +1710,7 @@ MonoBehaviour:
     - title: Description
       value: 
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
     - title: Actor
       value: 1
       type: 5
@@ -1958,7 +1958,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 250
-        y: 278
+        y: 276.82355
         width: 160
         height: 30
     - id: 3
@@ -2447,7 +2447,7 @@ MonoBehaviour:
       - originConversationID: 2
         originDialogueID: 9
         destinationConversationID: 2
-        destinationDialogueID: 13
+        destinationDialogueID: 14
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -2523,7 +2523,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 40
-        y: 176
+        y: 173.64706
         width: 160
         height: 30
     - id: 12
@@ -2603,6 +2603,87 @@ MonoBehaviour:
       - title: Title
         value: New Dialogue Entry
         type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 'SetActive(Cutaway 1_1,true);
+
+          Delay(2.5);
+
+          SetActive(Cutaway
+          1_1,false);
+
+          SetActive(Cutaway 1_2,true);
+
+          Delay(2.5);
+
+          SetActive(Cutaway
+          1_2,false);
+
+          Fade(out#000000);
+
+          LoadLevel(Chris_Main_Menu)'
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 211.57071
+        y: 695.96674
+        width: 160
+        height: 30
+    - id: 14
+      fields:
+      - title: Title
+        value: 
+        type: 0
         typeString: 
       - title: Pictures
         value: '[]'
@@ -2641,9 +2722,150 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: 'Fade(out#000000);
-
-          LoadLevel(Chris_Main_Menu)'
+        value: SwitchCamera(Cutaway 1_1);SendMessage(SetHiding,true,Child_1);MoveTo(front_rack
+          (1),Child_1);SendMessage(ActivateEnemy,true,SecurityGuard);Delay(5)
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 14
+        destinationConversationID: 2
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 460.79773
+        y: 576.9974
+        width: 160
+        height: 30
+    - id: 15
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ???
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SwitchCamera(Cutaway 1_2);Delay(5)
+        type: 0
+        typeString: 
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 15
+        destinationConversationID: 2
+        destinationDialogueID: 16
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 462.2397
+        y: 633.2547
+        width: 160
+        height: 30
+    - id: 16
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Where'd they go?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -2661,12 +2883,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 461
-        y: 576
+        x: 462.2397
+        y: 683.2547
         width: 160
         height: 30
-    canvasScrollPosition: {x: 72.60272, y: 301.3698}
-    canvasZoom: 0.73000026
+    canvasScrollPosition: {x: 0, y: 411.93686}
+    canvasZoom: 0.7300004
   - id: 3
     fields:
     - title: Title
@@ -4428,6 +4650,220 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 1
+        destinationConversationID: 7
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 37
+        y: 142.96907
+        width: 160
+        height: 30
+    - id: 17
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SwitchCamera(Cutaway 1_1);SendMessage(SetHiding,front_rack (1),Child_1);MoveTo(front_rack
+          (1),Child_1);SendMessage(ActivateEnemy,true,SecurityGuard);Delay(5)
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 17
+        destinationConversationID: 7
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 91.44394
+        y: 214.43298
+        width: 160
+        height: 30
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: ???
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: SwitchCamera(Cutaway 1_2);Delay(5)
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 18
+        destinationConversationID: 7
+        destinationDialogueID: 19
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 92.885895
+        y: 269.65936
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: -1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Where'd they go?
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
@@ -4436,12 +4872,12 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 34
-        y: 143
+        x: 92.885895
+        y: 320.6903
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 0, y: 96.90721}
+    canvasZoom: 0.97000015
   - id: 8
     fields:
     - title: Title
@@ -4833,7 +5269,7 @@ MonoBehaviour:
         y: 132
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 58}
     canvasZoom: 1
   - id: 9
     fields:
@@ -5451,7 +5887,7 @@ MonoBehaviour:
         y: 114.65854
         width: 160
         height: 30
-    canvasScrollPosition: {x: 116.601265, y: 0}
+    canvasScrollPosition: {x: 36.99997, y: 17}
     canvasZoom: 1.0000001
   - id: 10
     fields:
