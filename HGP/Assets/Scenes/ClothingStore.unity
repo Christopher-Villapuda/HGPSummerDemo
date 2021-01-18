@@ -843,7 +843,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -940,10 +940,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   footstep:
-  - {fileID: 8300000, guid: cb70b85b4c8d406479f10f9884ada209, type: 3}
-  - {fileID: 8300000, guid: 8b527b5d0f168634c9c807efa2cafb88, type: 3}
-  - {fileID: 8300000, guid: 99008de7ad8d9bb49b9ed7c0cb4b519b, type: 3}
-  - {fileID: 8300000, guid: fb3d81e72e1079945b696ce5de281046, type: 3}
+  - {fileID: 8300000, guid: f9f586d1d64907349a40c2aaad8da6d0, type: 3}
+  - {fileID: 8300000, guid: 8b02491a6636d7347b5cd3db5fe81a2c, type: 3}
+  - {fileID: 8300000, guid: 3afe3c545818bc9429edeb9783442033, type: 3}
+  - {fileID: 8300000, guid: 43de2cd0f704bd745921d5950f7035f7, type: 3}
+  - {fileID: 8300000, guid: 2f487345a4bed174b9872d401518117e, type: 3}
   pitchMin: 0.75
   pitchMax: 1.25
 --- !u!114 &50649232 stripped
@@ -1037,6 +1038,14 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: 6553818e56194084498366af92bb0bfc, type: 2}
+--- !u!81 &50649235
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50649219}
+  m_Enabled: 1
 --- !u!1 &69160791
 GameObject:
   m_ObjectHideFlags: 0
@@ -72186,13 +72195,18 @@ PrefabInstance:
     - target: {fileID: 8697157824809882726, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8697157824809882727, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: volume
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8697157824809882727, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
+        type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 8300000, guid: cf800507b5a276e43861153980ad59c9, type: 3}
     - target: {fileID: 8697157824809882745, guid: ca646a7c8bbe8d1489f4f07bacedf85b,
         type: 3}
       propertyPath: m_Name
@@ -72607,13 +72621,13 @@ PrefabInstance:
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: volume
-      value: 0.35
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 764414572192000970, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: clip
       value: 
-      objectReference: {fileID: 8300000, guid: 41e439eb40c0fff4fb38f5ea608a8031, type: 3}
+      objectReference: {fileID: 8300000, guid: 04c2c45dafa3f7d49a81fdf7bb652228, type: 3}
     - target: {fileID: 764414572192000971, guid: 4e73d889014b42043bc12528b06d46a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -81046,7 +81060,8 @@ PrefabInstance:
       propertyPath: staminaDrain
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5056646921760471665, guid: 4e439e07c3e9df74fa1584a269676f0f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4e439e07c3e9df74fa1584a269676f0f, type: 3}
 --- !u!95 &1743626013 stripped
 Animator:
