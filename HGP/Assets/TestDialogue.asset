@@ -2819,7 +2819,13 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: SwitchCamera(Cutaway 1_2);Delay(2.5);AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);Delay({{end}});
+        value: 'SwitchCamera(Cutaway 1_2);
+
+          Delay(2.5);
+
+          AudioWait(Audio/Mixed/Dialogue/FrightNight_Dialogue_PopUp_01);
+
+          Delay({{end}});'
         type: 0
         typeString: 
       conversationID: 2
@@ -3048,8 +3054,8 @@ MonoBehaviour:
         y: 329.56326
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 20.547928}
-    canvasZoom: 0.7300005
+    canvasScrollPosition: {x: 0, y: 407.14252}
+    canvasZoom: 0.7000005
   - id: 3
     fields:
     - title: Title
