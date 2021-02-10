@@ -42,6 +42,7 @@ public class PlayerHide : MonoBehaviour
         float step = hideSpeed * Time.deltaTime;
         if (hiding)
         {
+            
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(newXpos, newYpos), step);
             //rBD2D.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(newXpos,newYpos),step));
 
@@ -50,6 +51,7 @@ public class PlayerHide : MonoBehaviour
         {
             if (leavingHiding)
             {
+                FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Emerge");
                 //transform.position = new Vector2(originalXpos, originalYpos);
                 Vector2 originalPosition = new Vector2(originalXpos, originalYpos);
                 transform.position = Vector2.MoveTowards(transform.position, originalPosition, step);
@@ -76,9 +78,11 @@ public class PlayerHide : MonoBehaviour
             {
                 if (Input.GetKeyDown("space"))
                 {
+                    
                     instructionText.SetActive(false);
                     if (collidingWith.gameObject.tag == "Prop")
                     {
+                        
                         if (hiding)
                         {
                             hiding = false;
@@ -86,6 +90,7 @@ public class PlayerHide : MonoBehaviour
                         }
                         else
                         {
+                            FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Hide");
                             hiding = true;
                             pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
