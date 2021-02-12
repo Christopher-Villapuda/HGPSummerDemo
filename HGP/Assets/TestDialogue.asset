@@ -2744,7 +2744,7 @@ MonoBehaviour:
 
           SetActive(GameOverBox,true);
 
-          Delay(2.5)'
+          Delay(3.0)'
         type: 0
         typeString: 
       conversationID: 2
@@ -3044,7 +3044,7 @@ MonoBehaviour:
         y: 326.82355
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 90, y: 288.99988}
     canvasZoom: 1.0000002
   - id: 3
     fields:
