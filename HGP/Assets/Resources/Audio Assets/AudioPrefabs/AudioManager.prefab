@@ -44,13 +44,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Theme
+  - name: Clothing Store Theme
     clip: {fileID: 8300000, guid: 04c2c45dafa3f7d49a81fdf7bb652228, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
-    loop: 0
-  - name: Ambience
+    loop: 1
+  - name: Clothing Store Ambience
     clip: {fileID: 8300000, guid: cf800507b5a276e43861153980ad59c9, type: 3}
     volume: 1
     pitch: 1
@@ -98,16 +98,16 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Main Menu Theme
+    clip: {fileID: 8300000, guid: 11a49734dee6dea47add3d4aa53b3017, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
     loop: 0
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0
+  - name: Main Menu Sleigh Bell
+    clip: {fileID: 8300000, guid: 720a43ba2de1db04b83a94b40c88a7de, type: 3}
+    volume: 1
+    pitch: 1
     source: {fileID: 0}
     loop: 0
   - name: 

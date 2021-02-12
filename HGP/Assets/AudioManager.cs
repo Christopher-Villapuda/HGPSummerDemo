@@ -1,4 +1,5 @@
 ﻿using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using System;
 
@@ -20,8 +21,16 @@ public class AudioManager : MonoBehaviour
     }
     private void Start()
     {
-        Play("Theme");
-        Play("Ambience");
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "ClothingStore")
+        {
+            Play("Clothing Store Theme");
+            Play("Clothing Store Ambience");
+        }
+        else if(scene.name == "Chris_Main_Menu")
+        {
+            Play("Main Menu Theme");
+        }
     }
 
     // Update is called once per frame
