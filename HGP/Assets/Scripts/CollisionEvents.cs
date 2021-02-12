@@ -5,17 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class CollisionEvents : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //This was for debugging collisions with the exit door and enemies (which would trigger Application.Quit() or at least a "GameOver" debug log.
+
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
