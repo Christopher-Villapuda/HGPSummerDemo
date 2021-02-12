@@ -47,6 +47,7 @@ public class PlayerHide : MonoBehaviour
         //If hiding, then the object moves toward teh given position (which is set elswhere in the script)
         if (hiding)
         {
+            
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(newXpos, newYpos), step);
             //rBD2D.MovePosition(Vector2.MoveTowards(transform.position, new Vector2(newXpos,newYpos),step));
         }
@@ -55,6 +56,7 @@ public class PlayerHide : MonoBehaviour
             //This moves the player to the original position they were at before hidign was set to true.
             if (leavingHiding)
             {
+                FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Emerge");
                 //transform.position = new Vector2(originalXpos, originalYpos);
                 Vector2 originalPosition = new Vector2(originalXpos, originalYpos);
                 transform.position = Vector2.MoveTowards(transform.position, originalPosition, step);
@@ -82,12 +84,15 @@ public class PlayerHide : MonoBehaviour
                 //When the spacebar is pressed
                 if (Input.GetKeyDown("space"))
                 {
+     
                     //There's a moment when a text UI element appears while the player is hiding. This turns it off. It is turned on in the sequencer somewhere.
+
                     instructionText.SetActive(false);
                     //Makes sure the object that is being collided with has the Prop tag.
                     if (collidingWith.gameObject.tag == "Prop")
                     {
-                        //If the object is already hiding, hiding is turned off and leavingHiding is set to true.
+                    //If the object is already hiding, hiding is turned off and leavingHiding is set to true.
+
                         if (hiding)
                         {
                             hiding = false;
@@ -99,6 +104,7 @@ public class PlayerHide : MonoBehaviour
                         //must have been a reason for it.
                         else
                         {
+                            FindObjectOfType<AudioManager>().Play("CS_ClothingRack_Hide");
                             hiding = true;
                             pC.Hidden = true;
                             newXpos = collidingWith.gameObject.transform.position.x;
