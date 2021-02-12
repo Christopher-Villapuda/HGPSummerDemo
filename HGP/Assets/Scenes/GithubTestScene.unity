@@ -1254,6 +1254,7 @@ MonoBehaviour:
   speed: 5
   waitTime: 3
   pathing: 1
+  looping: 1
 --- !u!212 &1025011574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1870,6 +1871,7 @@ MonoBehaviour:
   speed: 5
   waitTime: 3
   pathing: 1
+  looping: 0
 --- !u!1 &1532098258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7635396878538775425, guid: 86b8411dd65d87a45835bddbe8f37d23,
