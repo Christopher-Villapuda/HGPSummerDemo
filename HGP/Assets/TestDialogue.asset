@@ -2819,7 +2819,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
+
         value: SwitchCamera(Cutaway 1_2);Delay(2.5);SendMessage(Play,Player_Dialogue_PopUp,AudioManager);Delay({{end}});
+
         type: 0
         typeString: 
       conversationID: 2
@@ -3048,8 +3050,10 @@ MonoBehaviour:
         y: 329.56326
         width: 160
         height: 30
+
     canvasScrollPosition: {x: 0, y: 195.45767}
     canvasZoom: 0.76000047
+
   - id: 3
     fields:
     - title: Title
